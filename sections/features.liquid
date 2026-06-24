@@ -1,0 +1,161 @@
+<style>
+  .features-marquee {
+    overflow: hidden;
+    padding: {{ section.settings.padding_y }}px 0;
+    background-color: {{ section.settings.bg_color }};
+  }
+  .features-marquee .scroll {
+    display: flex;
+    gap: 2.5rem;
+    width: max-content;
+    animation: features-marquee {{ section.settings.speed }}s linear infinite;
+  }
+  .features-marquee:hover .scroll {
+    animation-play-state: paused;
+  }
+  .features-marquee .scroll-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    white-space: nowrap;
+  }
+  .features-marquee .scroll-item img {
+    width: {{ section.settings.icon_size }}px;
+    height: {{ section.settings.icon_size }}px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+  .features-marquee .scroll-item span {
+    font-size: {{ section.settings.font_size }}px;
+    font-weight: 500;
+    color: {{ section.settings.text_color }};
+  }
+  @keyframes features-marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+</style>
+
+<section class="features-marquee">
+  <div class="scroll">
+    {% for block in section.blocks %}
+      <div class="scroll-item">
+        {% if block.settings.image != blank %}
+          <img
+            src="{{ block.settings.image | image_url: width: 100 }}"
+            width="{{ section.settings.icon_size }}"
+            height="{{ section.settings.icon_size }}"
+            alt="{{ block.settings.title | default: '' }}"
+          >
+        {% endif %}
+        {% if block.settings.title != blank %}
+          <span>{{ block.settings.title }}</span>
+        {% endif %}
+      </div>
+    {% endfor %}
+
+    {% for block in section.blocks %}
+      <div class="scroll-item" aria-hidden="true">
+        {% if block.settings.image != blank %}
+          <img
+            src="{{ block.settings.image | image_url: width: 100 }}"
+            width="{{ section.settings.icon_size }}"
+            height="{{ section.settings.icon_size }}"
+            alt=""
+          >
+        {% endif %}
+        {% if block.settings.title != blank %}
+          <span>{{ block.settings.title }}</span>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Features Marquee",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#1E6FD9"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Icon size (px)",
+      "min": 16,
+      "max": 64,
+      "step": 2,
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Font size (px)",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "padding_y",
+      "label": "Vertical padding (px)",
+      "min": 0,
+      "max": 60,
+      "step": 2,
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "label": "Scroll speed (seconds — lower = faster)",
+      "min": 5,
+      "max": 60,
+      "step": 1,
+      "default": 20
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Icon / Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "All Natural"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Features Marquee",
+      "blocks": [
+        { "type": "feature" },
+        { "type": "feature" },
+        { "type": "feature" },
+        { "type": "feature" },
+        { "type": "feature" },
+        { "type": "feature" }
+      ]
+    }
+  ]
+}
+{% endschema %}

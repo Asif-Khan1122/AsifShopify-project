@@ -1,0 +1,222 @@
+<style>
+    .noot_slideshow{
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 620px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      {% if section.settings.background_type == 'image' and section.settings.bg_image %}
+        background-image: url({{ section.settings.bg_image | image_url: width: 2000 }});
+      {% else %}
+        background-image: none;
+        background-color: {{ section.settings.bg_color }};
+      {% endif %}
+    }
+
+      .noot_slideshow .container {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        padding-right: 30px;
+        max-width: 550px;
+      }
+      .noot_slideshow h2 {
+        font-size: 66px;
+        line-height: 67px;
+        font-weight: 700;
+        font-family: morion test;
+        letter-spacing: -3.29px;
+        margin: 0;
+      }
+      .noot_slideshow .buttons {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .noot_slideshow a {
+        text-decoration: none;
+        padding: 15px 20px;
+        border-radius: 22px 0;
+        line-height: 25px;
+        font-size: 18px;
+        font-weight: 500;
+        display: flex;
+        gap: 20px;
+    }
+    /* Tablet - 768px and below */
+  @media screen and (max-width: 768px) {
+    .noot_slideshow {
+      height: 500px;
+      justify-content: center;
+      background-position: center;
+    }
+
+    .noot_slideshow .container {
+      max-width: 100%;
+      padding: 0 20px;
+      text-align: center;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .noot_slideshow h2 {
+      font-size: 42px;
+      line-height: 46px;
+      letter-spacing: -2px;
+    }
+
+    .noot_slideshow a {
+      font-size: 16px;
+      padding: 12px 18px;
+    }
+  }
+
+  /* Mobile - 480px and below */
+  @media screen and (max-width: 480px) {
+    .noot_slideshow {
+      height: 400px;
+      justify-content: center;
+    }
+
+    .noot_slideshow .container {
+      gap: 20px;
+      padding: 0 15px;
+    }
+
+    .noot_slideshow h2 {
+      font-size: 32px;
+      line-height: 36px;
+      letter-spacing: -1.5px;
+    }
+
+    .noot_slideshow .buttons {
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+
+    .noot_slideshow a {
+      width: 100%;
+      justify-content: center;
+      font-size: 15px;
+      padding: 12px 15px;
+    }
+  }
+</style>
+{% style %}
+  #noot_slideshow-{{ section.id }} h2,
+  #noot_slideshow-{{ section.id }} a {
+    color: {{ section.settings.font_color }};
+  }
+
+  #noot_slideshow-{{ section.id }} a{
+    background: {{ section.settings.button_bg_color }}
+  }
+{% endstyle %}
+<section class="noot_slideshow" id="noot_slideshow-{{ section.id }}">
+  <div class="container">
+    {% if section.settings.headline != blank %}
+      <h2>{{ section.settings.headline }}</h2>
+    {% endif %}
+    <div class="buttons">
+      {% if section.settings.btn1 != blank %}
+        <a href="{{ section.settings.btn_url1 }}">
+          {{- section.settings.btn1 }}
+          <span>→</span>
+        </a>
+      {% endif %}
+      {% if section.settings.btn2 != blank %}
+        <a href="{{ section.settings.btn_url2 }}">
+          {{- section.settings.btn2 }}
+          <span>→</span>
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Noot Slideshow",
+  "settings": [
+    {
+      "type": "select",
+      "id": "background_type",
+      "label": "Background Type",
+      "options": [
+        {
+          "value": "color",
+          "label": "Color"
+        },
+        {
+          "value": "image",
+          "label": "Image"
+        }
+      ],
+      "default": "image"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Heading",
+      "default": "The cocktail taste you love, with none of the consequences."
+    },
+    {
+      "type": "text",
+      "id": "btn1",
+      "label": "Button 1 Text"
+    },
+    {
+      "type": "url",
+      "id": "btn_url1",
+      "label": "Button 1 URL"
+    },
+    {
+      "type": "text",
+      "id": "btn2",
+      "label": "Button 2 Text"
+    },
+    {
+      "type": "url",
+      "id": "btn_url2",
+      "label": "Button 2 URL"
+    },
+    {
+      "type": "header",
+      "content": "Color Settings"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "BG Color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "font_color",
+      "label": "Font Color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "BG Background Color",
+      "default": "#E74F1F"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Noot Slideshow"
+    }
+  ]
+}
+{% endschema %}

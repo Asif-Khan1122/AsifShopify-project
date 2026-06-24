@@ -1,0 +1,246 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "image_behavior": "none",
+        "desktop_content_position": "bottom-center",
+        "desktop_content_alignment": "center",
+        "show_text_box": false,
+        "color_scheme": "scheme-3",
+        "stack_images_on_mobile": false,
+        "mobile_content_alignment": "center",
+        "show_text_below": false
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "all",
+        "products_to_show": 8,
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "banner_nMxKJK": {
+      "type": "banner",
+      "name": "Noot Slideshow",
+      "settings": {
+        "background_type": "image",
+        "bg_image": "shopify://shop_images/banner-bg.png",
+        "headline": "The cocktail taste you love, with none of the consequences.",
+        "btn1": "Shop Cans",
+        "btn_url1": "#",
+        "btn2": "Shop Bottles",
+        "btn_url2": "#",
+        "bg_color": "#000",
+        "font_color": "#fff",
+        "button_bg_color": "#e74f1f"
+      }
+    },
+    "features_Y3tbCJ": {
+      "type": "features",
+      "blocks": {
+        "feature_8wfUAx": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/faviconimage.png",
+            "title": "All Natural Nootropics"
+          }
+        },
+        "feature_RLqHLU": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/faviconimage.png",
+            "title": "No Sugar"
+          }
+        },
+        "feature_EE8ekm": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/faviconimage.png",
+            "title": "Zero Proof"
+          }
+        },
+        "feature_mdLnt4": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/faviconimage.png",
+            "title": "No Hangover"
+          }
+        },
+        "feature_CMjQCT": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/faviconimage.png",
+            "title": "Classic Cocktail Taste"
+          }
+        },
+        "feature_QYg8Ed": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/faviconimage.png",
+            "title": "Classic Cocktail Taste"
+          }
+        },
+        "feature_LYnPwF": {
+          "type": "feature",
+          "settings": {
+            "image": "shopify://shop_images/faviconimage.png",
+            "title": "Gluten Free + Vegan"
+          }
+        }
+      },
+      "block_order": [
+        "feature_8wfUAx",
+        "feature_RLqHLU",
+        "feature_EE8ekm",
+        "feature_mdLnt4",
+        "feature_CMjQCT",
+        "feature_QYg8Ed",
+        "feature_LYnPwF"
+      ],
+      "name": "Features Marquee",
+      "settings": {
+        "bg_color": "#1e6fd9",
+        "text_color": "#ffffff",
+        "icon_size": 28,
+        "font_size": 16,
+        "padding_y": 16,
+        "speed": 20
+      }
+    },
+    "social_proof_YWcHYL": {
+      "type": "social-proof",
+      "name": "Features",
+      "settings": {
+        "image_1": "shopify://shop_images/Container.png",
+        "image_2": "shopify://shop_images/Container_2.png",
+        "image_3": "shopify://shop_images/Container_1.png",
+        "image_4": "shopify://shop_images/Container_3.png",
+        "quote": "\"Taste better than an Aperol Apritz.\"",
+        "author": "TONNY // BARTENDER @ THE PEMAR LOS ANGELES, CALIFORNIA"
+      }
+    },
+    "why_noot_Jc99Kw": {
+      "type": "why-noot",
+      "name": "Why Noot",
+      "settings": {
+        "bg_color": "#e74f1f",
+        "text_color": "#ffffff",
+        "sub_heading": "Inside the BLEND",
+        "heading": "Why Noot",
+        "text": "Born in Australia, crafted for cocktail lovers who want the taste without the trade-offs.",
+        "noot_btn": "Shop Noot",
+        "button_link": "#",
+        "image": "shopify://shop_images/Background.png",
+        "col_heading_1": "Zero Alcohol",
+        "col_text_1": "No alcohol, no sugar, no consequences. Tastes amazing with all natural ingredients.",
+        "col_heading_2": "Nootropic Buzz",
+        "col_text_2": "Functional nootropics give you a\nsocial lift without alcohol or a\nhangover.",
+        "col_heading_3": "Real cocktail Taste",
+        "col_text_3": "Developed with bartenders to\nnail actual cocktail flavor — not\na compromise."
+      }
+    },
+    "social_VMfamA": {
+      "type": "social",
+      "name": "Social",
+      "settings": {
+        "social_image": "shopify://shop_images/left_side.png",
+        "bg_color_1": "#e74c3c",
+        "bg_color_2": "#3498db",
+        "bg_color_3": "#2ecc71",
+        "sub_heading_1": "EVERYONE’S BUZZING",
+        "heading_1": "\"I bring Noot to every dinner party. Finally, something sophisticated that doesn't leave you foggy the next morning.\"",
+        "author_name_1": "John Doe",
+        "author_location_1": "New York, USA",
+        "sub_heading_2": "THE PARTY FAVORITE",
+        "heading_2": "\"Noot is my go-to for every gathering. It feels refined and enjoyable without the sluggish feeling the next day.\"",
+        "author_name_2": "Michael Carter",
+        "author_location_2": "Miami, Florida",
+        "sub_heading_3": "EVERYONE'S TALKING",
+        "heading_3": "\"Noot has become a staple at every dinner I attend. It's sophisticated and refreshing without the usual next-day haze.\"",
+        "author_name_3": "David Wilson",
+        "author_location_3": "Los Angeles, USA"
+      }
+    },
+    "social_feed_WqxJbp": {
+      "type": "social-feed",
+      "name": "Social Feed",
+      "settings": {
+        "heading": "Jion us @nootdrink",
+        "social_feed_image_1": "shopify://shop_images/edited.png",
+        "social_feed_image_2": "shopify://shop_images/lastimg2.png",
+        "social_feed_image_3": "shopify://shop_images/lastimg3.png",
+        "social_feed_image_4": "shopify://shop_images/lastimg4.png",
+        "social_feed_image_5": "shopify://shop_images/lastimg_e45418ce-b208-4309-9d55-ed803ffe4bf0.png"
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "featured_collection",
+    "banner_nMxKJK",
+    "features_Y3tbCJ",
+    "social_proof_YWcHYL",
+    "why_noot_Jc99Kw",
+    "social_VMfamA",
+    "social_feed_WqxJbp"
+  ]
+}
