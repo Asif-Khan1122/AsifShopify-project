@@ -1,26 +1,71 @@
 <style>
-  .social_feed{
+    .social_feed{
       width: 100%;
       padding: 50px 0;
       background-color: {{ section.settings.bg_color }}
-  }
+    }
 
-  .social_feed .container {
-      width: 100%;
-      max-width: 1265px;
+    .social_feed .container {
+      max-width: 100%;
       margin: 0 auto;
-  }
+    }
 
-  .social_feed .social_feed_inner{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 36px;
+    .social_feed .social_feed_inner{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 36px;
+    }
+
+    .social_feed .social_feed_images {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 300px;
+      grid-auto-rows: 361px;
+      gap: 18px;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      width: 100%;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .social_feed .scrolling_image {
+      overflow: hidden;
+    }
+
+    .social_feed .scrolling_image img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .social_feed h2 {
+      margin: 0;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(35px, 4vw, 48px);
+      color: #e74f1f;
+      line-height: 58px;
+    }
+
+    @media (max-width: 768px){
+      .social_feed{
+        padding: 30px 0;
+      }
+
+      .social_feed .social_feed_inner{
+        gap: 26px;
+    }
+
+    .social_feed h2 {
+      line-height: 48px;
   }
 
   .social_feed .social_feed_images{
-        display: flex;
+     gap: 12px;
   }
+    }
 </style>
 
 <section class="social_feed">
@@ -38,8 +83,8 @@
               src="{{ section.settings.social_feed_image_1 | image_url: width: 800 }}"
               alt="{{ section.settings.heading | escape }}"
               loading="lazy"
-              width="100%"
-              height="auto"
+              width="{{ section.settings.social_feed_image_1.width }}"
+              height="{{ section.settings.social_feed_image_1.height }}"
             >
           {% endif %}
         </div>
@@ -49,8 +94,8 @@
               src="{{ section.settings.social_feed_image_2 | image_url: width: 800 }}"
               alt="{{ section.settings.heading | escape }}"
               loading="lazy"
-              width="100%"
-              height="auto"
+              width="{{ section.settings.social_feed_image_2.width }}"
+              height="{{ section.settings.social_feed_image_2.height }}"
             >
           {% endif %}
         </div>
@@ -60,8 +105,8 @@
               src="{{ section.settings.social_feed_image_3 | image_url: width: 800 }}"
               alt="{{ section.settings.heading | escape }}"
               loading="lazy"
-              width="100%"
-              height="auto"
+              width="{{ section.settings.social_feed_image_3.width }}"
+              height="{{ section.settings.social_feed_image_3.height }}"
             >
           {% endif %}
         </div>
@@ -71,8 +116,8 @@
               src="{{ section.settings.social_feed_image_4 | image_url: width: 800 }}"
               alt="{{ section.settings.heading | escape }}"
               loading="lazy"
-              width="100%"
-              height="auto"
+              width="{{ section.settings.social_feed_image_4.width }}"
+              height="{{ section.settings.social_feed_image_4.height }}"
             >
           {% endif %}
         </div>
@@ -82,8 +127,8 @@
               src="{{ section.settings.social_feed_image_5 | image_url: width: 800 }}"
               alt="{{ section.settings.heading | escape }}"
               loading="lazy"
-              width="100%"
-              height="auto"
+              width="{{ section.settings.social_feed_image_5.width }}"
+              height="{{ section.settings.social_feed_image_5.height }}"
             >
           {% endif %}
         </div>
@@ -101,6 +146,12 @@
       "id": "heading",
       "label": "Add Heading",
       "default": "Main Heading"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#fbf9f2"
     },
     {
       "type": "image_picker",

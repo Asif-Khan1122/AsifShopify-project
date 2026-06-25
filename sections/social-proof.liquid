@@ -3,6 +3,7 @@
             max-width: 100%;
             margin: 0 auto;
             padding: 20px 0;
+            background-color: {{ section.settings.bg_color }}
           }
 
           .social_proof_wrapper {
@@ -89,6 +90,8 @@
           src="{{ section.settings.image_1 | image_url }}"
           alt="{{ section.settings.image_1.alt | default: 'Image 1' }}"
           loading="lazy"
+          width="{{ section.settings.image_1.width }}"
+          height="{{ section.settings.image_1.height }}"
         >
       {% endif %}
     </div>
@@ -99,6 +102,8 @@
           src="{{ section.settings.image_2 | image_url }}"
           alt="{{ section.settings.image_2.alt | default: 'Image 2' }}"
           loading="lazy"
+          width="{{ section.settings.image_2.width }}"
+          height="{{ section.settings.image_2.height }}"
         >
       {% endif %}
     </div>
@@ -110,6 +115,8 @@
           src="{{ section.settings.image_3 | image_url }}"
           alt="{{ section.settings.image_3.alt | default: 'Image 3' }}"
           loading="lazy"
+          width="{{ section.settings.image_3.width }}"
+          height="{{ section.settings.image_3.height }}"
         >
       {% endif %}
       <div class="testimonials" role="complementary" aria-label="Testimonial">
@@ -128,6 +135,8 @@
           src="{{ section.settings.image_4 | image_url }}"
           alt="{{ section.settings.image_4.alt | default: 'Image 4' }}"
           loading="lazy"
+          width="{{ section.settings.image_4.width }}"
+          height="{{ section.settings.image_4.height }}"
         >
       {% endif %}
     </div>
@@ -138,6 +147,12 @@
 {
   "name": "Features",
   "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#fbf9f2"
+    },
     {
       "type": "image_picker",
       "id": "image_1",
