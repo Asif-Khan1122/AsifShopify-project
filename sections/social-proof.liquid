@@ -1,85 +1,87 @@
 <style>
-          .social_proof {
-            max-width: 100%;
-            margin: 0 auto;
-            padding: 20px 0;
-            background-color: {{ section.settings.bg_color }}
-          }
-
-          .social_proof_wrapper {
-            display: flex;
-            gap: 15px;
-            width: 100%;
-
-            overflow-x: auto;
-            scroll-snap-type: x mandatory;
-            -webkit-overflow-scrolling: touch;
-            scrollbar-width: none;
-          }
-
-          .social_proof_wrapper::-webkit-scrollbar {
-        display: none;
+    .social_proof {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 20px 0;
+      background-color: {{ section.settings.bg_color }}
     }
 
-          .card {
-            flex: 0 0 auto;
-            max-width: 300px;
-              scroll-snap-align: start;
+    .social_proof_wrapper {
+      display: flex;
+      gap: 15px;
+      width: 100%;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .social_proof_wrapper::-webkit-scrollbar {
+      display: none;
+    }
+
+    .card {
+      flex: 0 0 auto;
+      max-width: 300px;
+      scroll-snap-align: start;
+    }
+
+    .card.card3 {
+      display: flex;
+      max-width: 400px;
+      flex-direction: column;
+    }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
   }
-          .card.card3 {
-          display: flex;
-              max-width: 400px;
 
-          flex-direction: column;
-      }
-          .card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-          }
-
-          img.half_image {
-            height: 50%;
-            border-radius: 25px 0 0 0;
-
-        }
-
-          .testimonials {
-            background: #f25a1f;
-            color: white;
-            padding: 50px 30px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 50%;
-            border-radius: 0 0 25px 0;
-          }
-
-          .testimonials h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-          }
-
-          .testimonials h3 {
-            font-size: 18px;
-            font-weight: normal;
-          }
-
-          @media (max-width: 768px) {
-            .testimonials{
-                padding: 35px 20px;
-            }
-             .card {
-            max-width: 250px;
+  img.half_image {
+    height: 50%;
+    border-radius: 25px 0 0 0;
   }
-          .card.card3 {
-              max-width: 300px;
 
-      }
+  .testimonials {
+    background: #f25a1f;
+    color: white;
+    padding: 50px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 50%;
+    border-radius: 0 0 25px 0;
+  }
 
-          }
+  .testimonials h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: {{ section.settings.heading_color }};
+  }
+
+  .testimonials h3 {
+    color: {{ section.settings.heading_color }};
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  @media (max-width: 768px) {
+  .testimonials{
+    padding: 35px 20px;
+  }
+
+  .card {
+    max-width: 250px;
+  }
+
+  .card.card3 {
+    max-width: 300px;
+    }
+
+  }
 </style>
 
 <section class="social_proof">
@@ -184,6 +186,12 @@
       "id": "author",
       "label": "Add Author",
       "default": "Happy Customer"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Text Color",
+      "default": "#fff"
     }
   ],
   "presets": [

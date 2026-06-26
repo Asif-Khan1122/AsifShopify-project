@@ -1,151 +1,151 @@
 <style>
-.social {
-  width: 100%;
-  height: auto;
-}
-
-.social img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.social .container {
-  max-width: 100%;
-  margin: 0 auto;
-}
-
-.social .social_inner {
-  display: flex;
-  align-items: stretch;
-}
-
-.social .right_image {
-  width: 50%;
-  display: flex;
-}
-
-.social .left_content {
-  padding: 80px 40px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 46px;
-}
-
-.slide_wrapper {
-  display: none;
-  flex-direction: column;
-  gap: 46px;
-}
-
-.slide_wrapper.active {
-  display: flex;
-}
-
-.social .sub_heading {
-  font-family: sans-serif;
-  font-size: 13px;
-  line-height: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-  letter-spacing: 2.6px;
-  margin: 0;
-}
-
-.social .left_content h2 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-  font-size: clamp(35px, 6vw, 48px);
-  color: white;
-  line-height: clamp(44px, 4vw, 58px);
-  margin: 0;
-}
-
-.social .author {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.social .author h4 {
-  font-size: clamp(18px, 3.5vw, 22px);
-  color: white;
-  line-height: 28px;
-  margin: 0;
-  font-weight: bold;
-}
-
-.social .author p {
-  font-size: clamp(16px, 3.5vw, 20px);
-  color: white;
-  line-height: 28px;
-  margin: 0;
-}
-
-.buttons {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-.social .prev_button {
-  width: 37px;
-  height: 37px;
-  border: 1.5px solid #fff;
-  border-radius: 50%;
-  color: #fff;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.social .next {
-  width: 37px;
-  height: 37px;
-  border: 1.5px solid #fff;
-  border-radius: 50%;
-  color: #fff;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.social .prev_button:hover,
-.social .next:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: scale(1.05);
-  transition: all 0.3s ease;
-}
-
-.social .prev_button:active,
-.social .next:active {
-  transform: scale(0.95);
-}
-
-@media (max-width: 768px) {
-  .social .social_inner {
-    flex-direction: column;
+  .social {
+    width: 100%;
+    height: auto;
   }
 
-  .social .right_image,
- .social .left_content  {
+  .social img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .social .container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .social .social_inner {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .social .right_image {
+    width: 50%;
+    display: flex;
   }
 
   .social .left_content {
-    padding: 30px 20px;
+    padding: 80px 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
   }
-}
 
-#left_content-{{ section.id }} {
-  background-color: {{ section.settings.bg_color_1 }};
-  transition: background-color 0.5s ease;
-}
+  .slide_wrapper {
+    display: none;
+    flex-direction: column;
+    gap: 46px;
+  }
+
+  .slide_wrapper.active {
+    display: flex;
+  }
+
+  .social .sub_heading {
+    font-family: sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2.6px;
+    margin: 0;
+  }
+
+  .social .left_content h2 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: clamp(35px, 6vw, 48px);
+    color: white;
+    line-height: clamp(44px, 4vw, 58px);
+    margin: 0;
+  }
+
+  .social .author {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .social .author h4 {
+    font-size: clamp(18px, 3.5vw, 22px);
+    color: white;
+    line-height: 28px;
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .social .author p {
+    font-size: clamp(16px, 3.5vw, 20px);
+    color: white;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  .buttons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .social .prev_button {
+    width: 37px;
+    height: 37px;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .social .next {
+    width: 37px;
+    height: 37px;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .social .prev_button:hover,
+  .social .next:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+
+  .social .prev_button:active,
+  .social .next:active {
+    transform: scale(0.95);
+  }
+
+  @media (max-width: 768px) {
+    .social .social_inner {
+      flex-direction: column;
+    }
+
+    .social .right_image,
+   .social .left_content  {
+      width: 100%;
+    }
+
+    .social .left_content {
+      padding: 30px 20px;
+    }
+  }
+
+  #left_content-{{ section.id }} {
+    background-color: {{ section.settings.bg_color_1 }};
+    transition: background-color 0.5s ease;
+  }
 </style>
 
 <section class="social">
@@ -245,7 +245,7 @@
       "type": "color",
       "id": "bg_color_1",
       "label": "Background Color - Slide 1",
-      "default": "#e74c3c"
+      "default": "#3498db"
     },
     {
       "type": "header",
@@ -255,7 +255,7 @@
       "type": "color",
       "id": "bg_color_2",
       "label": "Background Color - Slide 2",
-      "default": "#3498db"
+      "default": "#e74c3c"
     },
     {
       "type": "header",
@@ -366,35 +366,35 @@
   const prevBtn = document.querySelector('.prev_button');
   const nextBtn = document.querySelector('.next');
   const leftContent = document.getElementById('left_content-{{ section.id }}');
-  
+
   // Store background colors from Liquid settings
   const bgColors = {
     1: '{{ section.settings.bg_color_1 }}',
     2: '{{ section.settings.bg_color_2 }}',
-    3: '{{ section.settings.bg_color_3 }}'
+    3: '{{ section.settings.bg_color_3 }}',
   };
-  
+
   let current = 0;
   let startX = 0;
-  
+
   function goToSlide(index) {
     if (!slides.length) return;
     slides.forEach((slide) => slide.classList.remove('active'));
     current = (index + slides.length) % slides.length;
     slides[current].classList.add('active');
-    
+
     // Change background color based on active slide
     const slideNumber = slides[current].getAttribute('data-slide');
     if (leftContent && bgColors[slideNumber]) {
       leftContent.style.backgroundColor = bgColors[slideNumber];
     }
   }
-  
+
   if (nextBtn && prevBtn) {
     nextBtn.addEventListener('click', () => goToSlide(current + 1));
     prevBtn.addEventListener('click', () => goToSlide(current - 1));
   }
-  
+
   if (leftContent) {
     leftContent.addEventListener('mousedown', (e) => {
       startX = e.clientX;
