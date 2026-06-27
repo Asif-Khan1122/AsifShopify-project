@@ -142,6 +142,27 @@
         >
       {% endif %}
     </div>
+
+    <div class="card card3">
+      {% if section.settings.image_3 %}
+        <img
+          class="half_image"
+          src="{{ section.settings.image_3 | image_url }}"
+          alt="{{ section.settings.image_3.alt | default: 'Image 3' }}"
+          loading="lazy"
+          width="{{ section.settings.image_3.width }}"
+          height="{{ section.settings.image_3.height }}"
+        >
+      {% endif %}
+      <div class="testimonials" role="complementary" aria-label="Testimonial">
+        {% if section.settings.quote != blank %}
+          <h2>{{ section.settings.quote }}</h2>
+        {% endif %}
+        {% if section.settings.author != blank %}
+          <h3>{{ section.settings.author }}</h3>
+        {% endif %}
+      </div>
+    </div>
   </div>
 </section>
 
