@@ -15,7 +15,7 @@
     justify-content: space-between;
   }
 
-  .why_noot .feature {
+  .why_noot .features {
     width: 58%;
     display: flex;
     align-items: center;
@@ -31,7 +31,7 @@
     margin: 0;
   }
 
-  .why_noot  .left_content h2 {
+  .why_noot .left_content h2 {
     font-size: 46px;
     line-height: 56px;
     margin: 0;
@@ -54,20 +54,20 @@
     gap: 12px;
   }
 
-  .feature h3 {
+  .why_noot .features h3 {
     font-size: 20px;
     line-height: 28px;
     margin: 0;
     font-family: sans-serif;
   }
 
-  .feature p {
+  .why_noot .features p {
     font-size: 15px;
     margin: 0;
     line-height: 22px;
   }
 
-  .left_content a {
+  .why_noot .left_content a {
     text-decoration: none;
     font-size: 16px;
     line-height: 19px;
@@ -86,9 +86,9 @@
   }
 
   @media (max-width: 768px) {
-    .why_noot .container{
-        flex-direction: column;
-        padding: 0 20px;
+    .why_noot .container {
+      flex-direction: column;
+      padding: 0 20px;
     }
 
     .left_content a {
@@ -103,11 +103,11 @@
       width: 100%;
     }
   }
-  @media (max-width: 570px){
-    .why_noot .feature{
-        flex-direction: column;
+  @media (max-width: 570px) {
+    .why_noot .feature {
+      flex-direction: column;
     }
-}
+  }
 </style>
 
 {% style %}
@@ -139,7 +139,7 @@
         <a href="{{ section.settings.button_link }}">{{ section.settings.noot_btn }} &rarr;</a>
       {% endif %}
     </div>
-    <div class="feature">
+    <div class="features">
       <div class="feature_col feature_col_1">
         {% if section.settings.image != blank %}
           <img
