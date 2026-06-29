@@ -5,8 +5,7 @@
       object-fit: cover;
       display: block;
     }
-
-    .feature {
+    #feature-{{ section.id }} {
       width: 100%;
       height: auto;
       font-family: Arial, Helvetica, sans-serif;
@@ -41,12 +40,17 @@
     }
 
     .feature .feature_text h2 {
-      font: 700 50px / 58px sans-serif;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 58px;
       color: #e74f1f;
       margin: 0;
     }
+
     .feature .feature_text h3 {
-      font: 600 22px / 30px sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 30px;
       color: #e74f1f;
       margin: 0;
     }
@@ -68,9 +72,9 @@
     }
 
     .feature a.feature_button:hover {
-    border: 1.5px solid #e74f1f;
-    color: #e74f1f;
-    background: #fff;
+      border: 1.5px solid #e74f1f;
+      color: #e74f1f;
+      background: #fff;
     }
 
     .feature .product_slider {
@@ -102,24 +106,24 @@
     }
 
     .feature span.product_size {
-    font-size: 12px;
-    line-height: 20px;
-    color: #fff;
-    margin: 0;
+      font-size: 12px;
+      line-height: 20px;
+      color: #fff;
+      margin: 0;
     }
 
-    h3.product_title {
-      font-size: 25px;
-        margin: 0;
+    .feature h3.product_title {
+      font-size: 20px;
+      margin: 0;
       color: #fff;
       font-weight: 600;
       line-height: 33px;
       font-family: "Playfair Display", sans-serif;
     }
 
-    p.product_desc {
+    .feature p.product_desc {
       font-size: 16px;
-        margin: 0;
+      margin: 0;
       color: #fff;
       line-height: 24px;
       font-weight: 500;
@@ -127,16 +131,15 @@
       max-width: 230px;
     }
 
-
-    .swiper-wrapper {
-    cursor: grab;
+    .feature .swiper-wrapper {
+      cursor: grab;
     }
 
     .feature .swiper-controls {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 24px;
     }
 
     .feature .swiper-button-prev,
@@ -162,8 +165,6 @@
     justify-content: center;
   }
 
-
-
   .feature .swiper-pagination {
     position: static;
     flex: 1;
@@ -179,8 +180,7 @@
     background: #e74f1f;
     border-radius: 999px;
     transition: transform 0.4s ease;
-    transform: scaleX(0);
-    transform-origin: left center;
+    display: block;
   }
 
   .feature .swiper-button-prev.swiper-button-disabled,
@@ -189,9 +189,28 @@
     opacity: 0.5;
     cursor: not-allowed;
   }
+
+  @media (max-width: 768px){
+    .feature .feature_header {
+      flex-direction: column;
+      text-align: center;
+      gap: 12px;
+    }
+
+    .feature a.feature_button{
+      width: 100%;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .feature .product_content{
+      padding: 10px 10px;
+
+    }
+  }
 </style>
 
-<section class="feature">
+<section class="feature" id="feature-{{ section.id }}">
   <div class="container">
     <div class="feature_inner">
       <div class="feature_header">
@@ -277,6 +296,63 @@
   </div>
 </section>
 
+<script src="{{ 'jquery-3.6.0.min.js' | asset_url }}" defer="defer"></script>
+{{ 'slick.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'slick.min.js' | asset_url }}" defer="defer"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('#feature-{{ section.id }} .product_slider').forEach(function (sliderEl) {
+      var $wrapper = jQuery(sliderEl).find('.swiper-wrapper');
+      var $prev = jQuery(sliderEl).find('.swiper-button-prev');
+      var $next = jQuery(sliderEl).find('.swiper-button-next');
+      var $fill = jQuery(sliderEl).find('.swiper-pagination-progressbar-fill');
+
+      function updateProgress(slick, currentSlide) {
+        if (!$fill.length) return;
+
+        var total = slick.slideCount - slick.options.slidesToShow;
+
+        if (total <= 0) {
+          $fill.css('transform', 'scaleX(1)');
+          return;
+        }
+
+        var current = currentSlide || 0;
+        var scale = Math.min((current + 1) / (total + 1), 1);
+
+        $fill.css({
+          transform: 'scaleX(' + scale + ')',
+          'transform-origin': 'left center',
+        });
+      }
+
+      $wrapper.on('init', function (event, slick) {
+        updateProgress(slick, 0);
+      });
+
+      $wrapper.on('afterChange', function (event, slick, currentSlide) {
+        updateProgress(slick, currentSlide);
+      });
+
+      $wrapper.slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: false,
+        arrows: true,
+        dots: false,
+        prevArrow: $prev,
+        nextArrow: $next,
+        responsive: [
+          { breakpoint: 1024, settings: { slidesToShow: 3 } },
+          { breakpoint: 768, settings: { slidesToShow: 2 } },
+          { breakpoint: 480, settings: { slidesToShow: 1 } },
+        ],
+      });
+    });
+  });
+</script>
+
 {% schema %}
 {
   "name": "Feature Products",
@@ -344,57 +420,3 @@
   ]
 }
 {% endschema %}
-
-<script src="{{ 'jquery-3.6.0.min.js' | asset_url }}" defer="defer"></script>
-{{ 'slick.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'slick.min.js' | asset_url }}" defer="defer"></script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.feature .product_slider').forEach(function (sliderEl) {
-      var $wrapper = jQuery(sliderEl).find('.swiper-wrapper');
-      var $prev = jQuery(sliderEl).find('.swiper-button-prev');
-      var $next = jQuery(sliderEl).find('.swiper-button-next');
-      var $fill = jQuery(sliderEl).find('.swiper-pagination-progressbar-fill');
-
-      function updateProgress(slick, currentSlide) {
-        if (!$fill.length) return;
-        var totalSteps = slick.slideCount - slick.options.slidesToShow;
-        var scale;
-
-        if (totalSteps <= 0) {
-          scale = 1; // saari slides ek hi screen pe fit ho rahi hain
-        } else {
-          var current = currentSlide <= 0 ? 0 : currentSlide >= totalSteps ? totalSteps : currentSlide;
-          scale = (current + 1) / (totalSteps + 1); // page-based fill: 50% se start, 100% pe end
-        }
-
-        $fill.css({
-          transform: 'scaleX(' + scale + ')',
-          'transform-origin': 'left center',
-        });
-      }
-
-      // ✅ Pehle event bind karo
-      $wrapper.on('init afterChange', function (event, slick, currentSlide) {
-        updateProgress(slick, currentSlide !== undefined ? currentSlide : slick.currentSlide);
-      });
-
-      // ✅ Phir slick init karo
-      $wrapper.slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        infinite: false,
-        arrows: true,
-        dots: false,
-        prevArrow: $prev,
-        nextArrow: $next,
-        responsive: [
-          { breakpoint: 1024, settings: { slidesToShow: 3 } },
-          { breakpoint: 768, settings: { slidesToShow: 2 } },
-          { breakpoint: 480, settings: { slidesToShow: 1 } },
-        ],
-      });
-    });
-  });
-</script>
