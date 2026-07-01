@@ -9,7 +9,8 @@
  */
 {
   "current": {
-    "logo_width": 90,
+    "logo": "shopify://shop_images/logo.png",
+    "logo_width": 160,
     "favicon": "shopify://shop_images/faviconimage.png",
     "type_header_font": "sans_serif_n4",
     "heading_scale": 100,
