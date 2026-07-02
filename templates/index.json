@@ -238,6 +238,15 @@
     "featured_products_tViiWM": {
       "type": "featured-products",
       "blocks": {
+        "product_CgKh6G": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/product3.png",
+            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
+            "product_title": "Ginger Mule",
+            "product_desc": "Sweet heat. Cool finish. Smarter mule."
+          }
+        },
         "product_RhFafQ": {
           "type": "product",
           "settings": {
@@ -258,6 +267,7 @@
         }
       },
       "block_order": [
+        "product_CgKh6G",
         "product_RhFafQ",
         "product_JAh7bd"
       ],
