@@ -231,6 +231,20 @@
         "button_link": "#"
       }
     },
+    "social_proof_YWcHYL": {
+      "type": "social-proof",
+      "name": "Features",
+      "settings": {
+        "bg_color": "#fbf9f2",
+        "image_1": "shopify://shop_images/Container.png",
+        "image_2": "shopify://shop_images/Container_2.png",
+        "image_3": "shopify://shop_images/Container_1.png",
+        "image_4": "shopify://shop_images/Container_3.png",
+        "quote": "\"Taste better than an Aperol Apritz.\"",
+        "author": "TONNY // BARTENDER @ THE PEMAR LOS ANGELES, CALIFORNIA",
+        "heading_color": "#ffffff"
+      }
+    },
     "featured_products_npypxr": {
       "type": "featured-products",
       "blocks": {
@@ -296,20 +310,6 @@
         "button_link": "#"
       }
     },
-    "social_proof_YWcHYL": {
-      "type": "social-proof",
-      "name": "Features",
-      "settings": {
-        "bg_color": "#fbf9f2",
-        "image_1": "shopify://shop_images/Container.png",
-        "image_2": "shopify://shop_images/Container_2.png",
-        "image_3": "shopify://shop_images/Container_1.png",
-        "image_4": "shopify://shop_images/Container_3.png",
-        "quote": "\"Taste better than an Aperol Apritz.\"",
-        "author": "TONNY // BARTENDER @ THE PEMAR LOS ANGELES, CALIFORNIA",
-        "heading_color": "#ffffff"
-      }
-    },
     "why_noot_Jc99Kw": {
       "type": "why-noot",
       "name": "Why Noot",
@@ -335,8 +335,8 @@
       "name": "Social",
       "settings": {
         "social_image": "shopify://shop_images/left_side.png",
-        "bg_color_1": "#e74c3c",
-        "bg_color_2": "#3498db",
+        "bg_color_1": "#3498DB",
+        "bg_color_2": "#E74C3C",
         "bg_color_3": "#2ecc71",
         "sub_heading_1": "EVERYONE’S BUZZING",
         "heading_1": "\"I bring Noot to every dinner party. Finally, something sophisticated that doesn't leave you foggy the next morning.\"",
