@@ -238,6 +238,15 @@
     "featured_products_tViiWM": {
       "type": "featured-products",
       "blocks": {
+        "product_99EpCb": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/product1.png",
+            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
+            "product_title": "Lemoncello",
+            "product_desc": "Perfectly mixed and ready to sip. Garnish if you’re feeling fancy."
+          }
+        },
         "product_CgKh6G": {
           "type": "product",
           "settings": {
@@ -276,6 +285,7 @@
         }
       },
       "block_order": [
+        "product_99EpCb",
         "product_CgKh6G",
         "product_6NNKip",
         "product_RhFafQ",
