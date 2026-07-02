@@ -166,6 +166,136 @@
         "speed": 20
       }
     },
+    "featured_products_tViiWM": {
+      "type": "featured-products",
+      "blocks": {
+        "product_99EpCb": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/product1.png",
+            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
+            "product_title": "Lemoncello",
+            "product_desc": "Perfectly mixed and ready to sip. Garnish if you’re feeling fancy."
+          }
+        },
+        "product_CgKh6G": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/product3.png",
+            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
+            "product_title": "Ginger Mule",
+            "product_desc": "Sweet heat. Cool finish. Smarter mule."
+          }
+        },
+        "product_6NNKip": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/product2.png",
+            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
+            "product_title": "Ginger Mule",
+            "product_desc": "Sweet heat. Cool finish. Smarter mule."
+          }
+        },
+        "product_RhFafQ": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/product5.png",
+            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
+            "product_title": "Nigroni Spritz",
+            "product_desc": "Italian spirit in a sparkling orange spritz."
+          }
+        },
+        "product_JAh7bd": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/product4.png",
+            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
+            "product_title": "Nigroni Spritz",
+            "product_desc": "Italian spirit in a sparkling orange spritz."
+          }
+        }
+      },
+      "block_order": [
+        "product_99EpCb",
+        "product_CgKh6G",
+        "product_6NNKip",
+        "product_RhFafQ",
+        "product_JAh7bd"
+      ],
+      "name": "Feature Products",
+      "settings": {
+        "bg_color": "rgb(251 249 242)",
+        "feature_heading": "Classic Canned Cocktails",
+        "sub_heading": "Perfectly mixed and ready to sip. Garnish if you’re feeling fancy.",
+        "button_label": "Shop All",
+        "button_link": "#"
+      }
+    },
+    "featured_products_npypxr": {
+      "type": "featured-products",
+      "blocks": {
+        "product_XUD7YW": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/product1.png",
+            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
+            "product_title": "Lemoncello",
+            "product_desc": "Perfectly mixed and ready to sip. Garnish if you’re feeling fancy."
+          }
+        },
+        "product_ikd8cM": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/product3.png",
+            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
+            "product_title": "Ginger Mule",
+            "product_desc": "Sweet heat. Cool finish. Smarter mule."
+          }
+        },
+        "product_rDziC6": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/product2.png",
+            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
+            "product_title": "Ginger Mule",
+            "product_desc": "Sweet heat. Cool finish. Smarter mule."
+          }
+        },
+        "product_QmAeLp": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/product5.png",
+            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
+            "product_title": "Nigroni Spritz",
+            "product_desc": "Italian spirit in a sparkling orange spritz."
+          }
+        },
+        "product_FtkRBx": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/product4.png",
+            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
+            "product_title": "Nigroni Spritz",
+            "product_desc": "Italian spirit in a sparkling orange spritz."
+          }
+        }
+      },
+      "block_order": [
+        "product_XUD7YW",
+        "product_ikd8cM",
+        "product_rDziC6",
+        "product_QmAeLp",
+        "product_FtkRBx"
+      ],
+      "name": "Feature Products",
+      "settings": {
+        "bg_color": "rgb(251 249 242)",
+        "feature_heading": "Classic Canned Cocktails",
+        "sub_heading": "Perfectly mixed and ready to sip. Garnish if you’re feeling fancy.",
+        "button_label": "Shop All",
+        "button_link": "#"
+      }
+    },
     "social_proof_YWcHYL": {
       "type": "social-proof",
       "name": "Features",
@@ -234,71 +364,6 @@
         "social_feed_image_4": "shopify://shop_images/lastimg4.png",
         "social_feed_image_5": "shopify://shop_images/lastimg_e45418ce-b208-4309-9d55-ed803ffe4bf0.png"
       }
-    },
-    "featured_products_tViiWM": {
-      "type": "featured-products",
-      "blocks": {
-        "product_99EpCb": {
-          "type": "product",
-          "settings": {
-            "product_image": "shopify://shop_images/product1.png",
-            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
-            "product_title": "Lemoncello",
-            "product_desc": "Perfectly mixed and ready to sip. Garnish if you’re feeling fancy."
-          }
-        },
-        "product_CgKh6G": {
-          "type": "product",
-          "settings": {
-            "product_image": "shopify://shop_images/product3.png",
-            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
-            "product_title": "Ginger Mule",
-            "product_desc": "Sweet heat. Cool finish. Smarter mule."
-          }
-        },
-        "product_6NNKip": {
-          "type": "product",
-          "settings": {
-            "product_image": "shopify://shop_images/product2.png",
-            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
-            "product_title": "Ginger Mule",
-            "product_desc": "Sweet heat. Cool finish. Smarter mule."
-          }
-        },
-        "product_RhFafQ": {
-          "type": "product",
-          "settings": {
-            "product_image": "shopify://shop_images/product5.png",
-            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
-            "product_title": "Nigroni Spritz",
-            "product_desc": "Italian spirit in a sparkling orange spritz."
-          }
-        },
-        "product_JAh7bd": {
-          "type": "product",
-          "settings": {
-            "product_image": "shopify://shop_images/product4.png",
-            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
-            "product_title": "Nigroni Spritz",
-            "product_desc": "Italian spirit in a sparkling orange spritz."
-          }
-        }
-      },
-      "block_order": [
-        "product_99EpCb",
-        "product_CgKh6G",
-        "product_6NNKip",
-        "product_RhFafQ",
-        "product_JAh7bd"
-      ],
-      "name": "Feature Products",
-      "settings": {
-        "bg_color": "rgb(251 249 242)",
-        "feature_heading": "Classic Canned Cocktails",
-        "sub_heading": "Perfectly mixed and ready to sip. Garnish if you’re feeling fancy.",
-        "button_label": "Shop All",
-        "button_link": "#"
-      }
     }
   },
   "order": [
@@ -306,10 +371,11 @@
     "featured_collection",
     "banner_nMxKJK",
     "features_Y3tbCJ",
+    "featured_products_tViiWM",
     "social_proof_YWcHYL",
+    "featured_products_npypxr",
     "why_noot_Jc99Kw",
     "social_VMfamA",
-    "social_feed_WqxJbp",
-    "featured_products_tViiWM"
+    "social_feed_WqxJbp"
   ]
 }
