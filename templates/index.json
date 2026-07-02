@@ -246,10 +246,20 @@
             "product_title": "Nigroni Spritz",
             "product_desc": "Italian spirit in a sparkling orange spritz."
           }
+        },
+        "product_JAh7bd": {
+          "type": "product",
+          "settings": {
+            "product_image": "shopify://shop_images/product4.png",
+            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
+            "product_title": "Nigroni Spritz",
+            "product_desc": "Italian spirit in a sparkling orange spritz."
+          }
         }
       },
       "block_order": [
-        "product_RhFafQ"
+        "product_RhFafQ",
+        "product_JAh7bd"
       ],
       "name": "Feature Products",
       "settings": {
