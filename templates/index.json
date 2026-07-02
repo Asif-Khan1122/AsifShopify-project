@@ -170,12 +170,14 @@
       "type": "social-proof",
       "name": "Features",
       "settings": {
+        "bg_color": "#fbf9f2",
         "image_1": "shopify://shop_images/Container.png",
         "image_2": "shopify://shop_images/Container_2.png",
         "image_3": "shopify://shop_images/Container_1.png",
         "image_4": "shopify://shop_images/Container_3.png",
         "quote": "\"Taste better than an Aperol Apritz.\"",
-        "author": "TONNY // BARTENDER @ THE PEMAR LOS ANGELES, CALIFORNIA"
+        "author": "TONNY // BARTENDER @ THE PEMAR LOS ANGELES, CALIFORNIA",
+        "heading_color": "#ffffff"
       }
     },
     "why_noot_Jc99Kw": {
@@ -225,11 +227,23 @@
       "name": "Social Feed",
       "settings": {
         "heading": "Jion us @nootdrink",
+        "bg_color": "#fbf9f2",
         "social_feed_image_1": "shopify://shop_images/edited.png",
         "social_feed_image_2": "shopify://shop_images/lastimg2.png",
         "social_feed_image_3": "shopify://shop_images/lastimg3.png",
         "social_feed_image_4": "shopify://shop_images/lastimg4.png",
         "social_feed_image_5": "shopify://shop_images/lastimg_e45418ce-b208-4309-9d55-ed803ffe4bf0.png"
+      }
+    },
+    "featured_products_tViiWM": {
+      "type": "featured-products",
+      "name": "Feature Products",
+      "settings": {
+        "bg_color": "rgb(251 249 242)",
+        "feature_heading": "Classic Canned Cocktails",
+        "sub_heading": "Perfectly mixed and ready to sip. Garnish if you’re feeling fancy.",
+        "button_label": "Shop All",
+        "button_link": "#"
       }
     }
   },
@@ -241,6 +255,7 @@
     "social_proof_YWcHYL",
     "why_noot_Jc99Kw",
     "social_VMfamA",
-    "social_feed_WqxJbp"
+    "social_feed_WqxJbp",
+    "featured_products_tViiWM"
   ]
 }
