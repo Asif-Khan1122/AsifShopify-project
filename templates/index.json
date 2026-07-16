@@ -101,6 +101,12 @@
     "custom_marquee_cgjNcb": {
       "type": "custom-marquee",
       "blocks": {
+        "image_mbbUxP": {
+          "type": "image",
+          "settings": {
+            "marquee_image": "shopify://shop_images/Logo_bdb84344-1b7e-48d2-8aee-9a138e95b53b.png"
+          }
+        },
         "image_bKKHmN": {
           "type": "image",
           "settings": {
@@ -127,6 +133,7 @@
         }
       },
       "block_order": [
+        "image_mbbUxP",
         "image_bKKHmN",
         "image_P86MJx",
         "image_xJwiDY",
