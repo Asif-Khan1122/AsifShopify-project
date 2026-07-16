@@ -97,11 +97,37 @@
         "image_link_label": "About Us",
         "banner_image_link": "#"
       }
+    },
+    "custom_marquee_cgjNcb": {
+      "type": "custom-marquee",
+      "blocks": {
+        "image_xJwiDY": {
+          "type": "image",
+          "settings": {
+            "marquee_image": "shopify://shop_images/Group_1597883834.png"
+          }
+        },
+        "image_UiL7JB": {
+          "type": "image",
+          "settings": {
+            "marquee_image": "shopify://shop_images/Group_1000003565_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_xJwiDY",
+        "image_UiL7JB"
+      ],
+      "name": "Custom Marquee",
+      "settings": {
+        "background_color": "#9C747C"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "banner_custom_D6ccqH"
+    "banner_custom_D6ccqH",
+    "custom_marquee_cgjNcb"
   ]
 }
