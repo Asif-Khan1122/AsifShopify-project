@@ -30,6 +30,14 @@
             "link": "#"
           }
         },
+        "contact_item_9nJf8L": {
+          "type": "contact_item",
+          "settings": {
+            "label": "Address",
+            "value": "Ecoraíces Native Nursery  Florida, USA",
+            "link": "#"
+          }
+        },
         "menu_link_XkriQD": {
           "type": "menu_link",
           "settings": {
@@ -62,6 +70,7 @@
       "block_order": [
         "contact_item_h9AKME",
         "contact_item_7dDmQp",
+        "contact_item_9nJf8L",
         "menu_link_XkriQD",
         "menu_link_6tLVXi",
         "menu_link_fRMtaW",
