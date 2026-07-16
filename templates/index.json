@@ -332,19 +332,27 @@
         },
         "image_JYNFN7": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/Verawood_Tree2_1.png"
+          }
         },
         "image_BbEYhQ": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/Green_island_Ficus3_1.png"
+          }
         },
         "image_yzqaVD": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/Beauty_Leaf_Tree1_1.png"
+          }
         },
         "image_AEKfHt": {
           "type": "image",
-          "settings": {}
+          "settings": {
+            "image": "shopify://shop_images/Beach_creeper2_1.png"
+          }
         }
       },
       "block_order": [
