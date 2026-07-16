@@ -196,12 +196,36 @@
             "cart_btn": "Add To Cart",
             "cart_url": "#"
           }
+        },
+        "plant_b4AfJ9": {
+          "type": "plant",
+          "settings": {
+            "plant_img": "shopify://shop_images/Green_island_Ficus2.png",
+            "content_heading": "Green Island Ficus",
+            "content_desc": "Glossy, compact foliage for hedges or border",
+            "featured_plant_price": "3-Gallon Pot: $5.46",
+            "cart_btn": "Add To Cart",
+            "cart_url": "#"
+          }
+        },
+        "plant_Qa9tYi": {
+          "type": "plant",
+          "settings": {
+            "plant_img": "shopify://shop_images/Green_island_Ficus2.png",
+            "content_heading": "Green Island Ficus",
+            "content_desc": "Glossy, compact foliage for hedges or border",
+            "featured_plant_price": "3-Gallon Pot: $5.46",
+            "cart_btn": "Add To Cart",
+            "cart_url": "#"
+          }
         }
       },
       "block_order": [
         "plant_rDFCmt",
         "plant_wbb4WM",
-        "plant_8m3VAJ"
+        "plant_8m3VAJ",
+        "plant_b4AfJ9",
+        "plant_Qa9tYi"
       ],
       "name": "Featured Plants",
       "settings": {
