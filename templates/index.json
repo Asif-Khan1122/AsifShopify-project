@@ -143,12 +143,30 @@
       "settings": {
         "background_color": "#9C747C"
       }
+    },
+    "image_with_content_fwbhPM": {
+      "type": "image-with-content",
+      "name": "Image With Text",
+      "settings": {
+        "padding_top": 148,
+        "padding_bottom": 140,
+        "padding_top_mbl": 60,
+        "padding_bottom_mbl": 60,
+        "media_img": "shopify://shop_images/Group_1597883209.png",
+        "content_heading": "About <strong>Ecoraíces </strong>Native Plants",
+        "sub_heading": "Rooted in Nature, Grown with Purpose",
+        "description_1": "At Ecoraíces, we specialize in high-quality, Florida-friendly plants that bring vibrancy and biodiversity to both homes and commercial spaces. Whether you’re a local gardener, landscape designer, or business owner, we provide carefully nurtured greenery — from ornamental shrubs to unique native groundcovers.",
+        "description_2": "We are passionate about sustainability, soil health, and supporting pollinators like Monarch butterflies. Every plant is grown with care, priced accessibly, and ready to thrive in your space.",
+        "btn_title": "Learn More About Us",
+        "btn_url": "#"
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
     "banner_custom_D6ccqH",
-    "custom_marquee_cgjNcb"
+    "custom_marquee_cgjNcb",
+    "image_with_content_fwbhPM"
   ]
 }
