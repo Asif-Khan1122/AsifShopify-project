@@ -14,6 +14,14 @@
     "homepage_footer_zYJ3Kr": {
       "type": "homepage-footer",
       "blocks": {
+        "contact_item_h9AKME": {
+          "type": "contact_item",
+          "settings": {
+            "label": "Email",
+            "value": "ecoraicesnative@gmail.com",
+            "link": "#"
+          }
+        },
         "menu_link_XkriQD": {
           "type": "menu_link",
           "settings": {
@@ -34,12 +42,21 @@
             "label": "Shop Plants",
             "link": "#"
           }
+        },
+        "menu_link_iRLXcB": {
+          "type": "menu_link",
+          "settings": {
+            "label": "Contact",
+            "link": "#"
+          }
         }
       },
       "block_order": [
+        "contact_item_h9AKME",
         "menu_link_XkriQD",
         "menu_link_6tLVXi",
-        "menu_link_fRMtaW"
+        "menu_link_fRMtaW",
+        "menu_link_iRLXcB"
       ],
       "name": "Homepage Footer",
       "settings": {
