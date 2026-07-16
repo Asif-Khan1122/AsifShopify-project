@@ -141,7 +141,7 @@
       ],
       "name": "Custom Marquee",
       "settings": {
-        "background_color": "#9C747C"
+        "background_color": "#9c747c"
       }
     },
     "image_with_content_fwbhPM": {
@@ -241,10 +241,37 @@
       ],
       "name": "Featured Plants",
       "settings": {
-        "bg_color": "#EEEEEE",
+        "bg_color": "#eeeeee",
         "heading": "Featured <strong>Plants</strong>",
         "view_all_btn": "View All Plants",
         "view_all_url": "#"
+      }
+    },
+    "bulk_services_f8BMHr": {
+      "type": "bulk-services",
+      "name": "Bulk Services",
+      "settings": {
+        "bg_color": "#fefefe",
+        "padding_top": 148,
+        "padding_bottom": 140,
+        "heading": "Bulk Orders & <strong>Business Services</strong>",
+        "description": "Are you a landscape architect, business, or municipality? We work directly with professionals to provide bulk pricing, liners, and guidance on native planting.",
+        "li_desc_1": "Available in Liners & Larger Pots",
+        "li_desc_2": "Customized Recommendations for Projects",
+        "li_desc_3": "Direct-to-Site Delivery (Florida only)",
+        "road_img": "shopify://shop_images/2_1.png",
+        "primary_btn_title": "Request Bulk Pricing",
+        "primary_btn_url": "#",
+        "primary_btn_color": "#fff",
+        "primary_btn_text_color": "#222",
+        "primary_btn_hover_color": "#7C8C74",
+        "primary_btn_hover_text_color": "#ffffff",
+        "secondary_btn_title": "Schedule a Call",
+        "secondary_btn_url": "#",
+        "secondary_btn_color": "#fff",
+        "secondary_btn_text_color": "#222",
+        "secondary_btn_hover_color": "#7C8C74",
+        "secondary_btn_hover_text_color": "#ffffff"
       }
     }
   },
@@ -254,6 +281,7 @@
     "banner_custom_D6ccqH",
     "custom_marquee_cgjNcb",
     "image_with_content_fwbhPM",
-    "featured_plants_k4AFzD"
+    "featured_plants_k4AFzD",
+    "bulk_services_f8BMHr"
   ]
 }
