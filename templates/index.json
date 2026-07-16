@@ -35,37 +35,36 @@
         "heading",
         "button"
       ],
-      "disabled": true,
       "settings": {
         "image_overlay_opacity": 40,
         "image_height": "large",
-        "image_behavior": "none",
         "desktop_content_position": "bottom-center",
-        "desktop_content_alignment": "center",
         "show_text_box": false,
+        "image_behavior": "none",
+        "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
-        "stack_images_on_mobile": false,
         "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
         "show_text_below": false
       }
     },
     "featured_collection": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
-        "collection": "all",
-        "products_to_show": 8,
         "title": "Featured products",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
         "columns_desktop": 4,
-        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "solid",
-        "color_scheme": "scheme-1",
+        "enable_desktop_slider": false,
+        "swipe_on_mobile": false,
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": true,
@@ -73,309 +72,13 @@
         "show_rating": false,
         "quick_add": "none",
         "columns_mobile": "2",
-        "swipe_on_mobile": false,
         "padding_top": 44,
         "padding_bottom": 36
-      }
-    },
-    "banner_nMxKJK": {
-      "type": "banner",
-      "name": "Noot Slideshow",
-      "settings": {
-        "background_type": "image",
-        "bg_image": "shopify://shop_images/banner-bg.png",
-        "headline": "The cocktail taste you love, with none of the consequences.",
-        "btn1": "Shop Cans",
-        "btn_url1": "#",
-        "btn2": "Shop Bottles",
-        "btn_url2": "#",
-        "bg_color": "#000",
-        "font_color": "#fff",
-        "button_bg_color": "#e74f1f"
-      }
-    },
-    "features_Y3tbCJ": {
-      "type": "features",
-      "blocks": {
-        "feature_8wfUAx": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/faviconimage.png",
-            "title": "All Natural Nootropics"
-          }
-        },
-        "feature_RLqHLU": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/faviconimage.png",
-            "title": "No Sugar"
-          }
-        },
-        "feature_EE8ekm": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/faviconimage.png",
-            "title": "Zero Proof"
-          }
-        },
-        "feature_mdLnt4": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/faviconimage.png",
-            "title": "No Hangover"
-          }
-        },
-        "feature_CMjQCT": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/faviconimage.png",
-            "title": "Classic Cocktail Taste"
-          }
-        },
-        "feature_QYg8Ed": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/faviconimage.png",
-            "title": "Classic Cocktail Taste"
-          }
-        },
-        "feature_LYnPwF": {
-          "type": "feature",
-          "settings": {
-            "image": "shopify://shop_images/faviconimage.png",
-            "title": "Gluten Free + Vegan"
-          }
-        }
-      },
-      "block_order": [
-        "feature_8wfUAx",
-        "feature_RLqHLU",
-        "feature_EE8ekm",
-        "feature_mdLnt4",
-        "feature_CMjQCT",
-        "feature_QYg8Ed",
-        "feature_LYnPwF"
-      ],
-      "name": "Features Marquee",
-      "settings": {
-        "bg_color": "#1e6fd9",
-        "text_color": "#ffffff",
-        "icon_size": 28,
-        "font_size": 16,
-        "padding_y": 16,
-        "speed": 20
-      }
-    },
-    "featured_products_tViiWM": {
-      "type": "featured-products",
-      "blocks": {
-        "product_99EpCb": {
-          "type": "product",
-          "settings": {
-            "product_image": "shopify://shop_images/product1.png",
-            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
-            "product_title": "Lemoncello",
-            "product_desc": "Perfectly mixed and ready to sip. Garnish if you’re feeling fancy."
-          }
-        },
-        "product_CgKh6G": {
-          "type": "product",
-          "settings": {
-            "product_image": "shopify://shop_images/product3.png",
-            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
-            "product_title": "Ginger Mule",
-            "product_desc": "Sweet heat. Cool finish. Smarter mule."
-          }
-        },
-        "product_6NNKip": {
-          "type": "product",
-          "settings": {
-            "product_image": "shopify://shop_images/product2.png",
-            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
-            "product_title": "Ginger Mule",
-            "product_desc": "Sweet heat. Cool finish. Smarter mule."
-          }
-        },
-        "product_RhFafQ": {
-          "type": "product",
-          "settings": {
-            "product_image": "shopify://shop_images/product5.png",
-            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
-            "product_title": "Nigroni Spritz",
-            "product_desc": "Italian spirit in a sparkling orange spritz."
-          }
-        },
-        "product_JAh7bd": {
-          "type": "product",
-          "settings": {
-            "product_image": "shopify://shop_images/product4.png",
-            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
-            "product_title": "Nigroni Spritz",
-            "product_desc": "Italian spirit in a sparkling orange spritz."
-          }
-        }
-      },
-      "block_order": [
-        "product_99EpCb",
-        "product_CgKh6G",
-        "product_6NNKip",
-        "product_RhFafQ",
-        "product_JAh7bd"
-      ],
-      "name": "Feature Products",
-      "settings": {
-        "bg_color": "rgb(251 249 242)",
-        "feature_heading": "Classic Canned Cocktails",
-        "sub_heading": "Perfectly mixed and ready to sip. Garnish if you’re feeling fancy.",
-        "button_label": "Shop All",
-        "button_link": "#"
-      }
-    },
-    "social_proof_YWcHYL": {
-      "type": "social-proof",
-      "name": "Features",
-      "settings": {
-        "bg_color": "#fbf9f2",
-        "image_1": "shopify://shop_images/Container.png",
-        "image_2": "shopify://shop_images/Container_2.png",
-        "image_3": "shopify://shop_images/Container_1.png",
-        "image_4": "shopify://shop_images/Container_3.png",
-        "quote": "\"Taste better than an Aperol Apritz.\"",
-        "author": "TONNY // BARTENDER @ THE PEMAR LOS ANGELES, CALIFORNIA",
-        "heading_color": "#ffffff"
-      }
-    },
-    "featured_products_npypxr": {
-      "type": "featured-products",
-      "blocks": {
-        "product_XUD7YW": {
-          "type": "product",
-          "settings": {
-            "product_image": "shopify://shop_images/product1.png",
-            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
-            "product_title": "Lemoncello",
-            "product_desc": "Perfectly mixed and ready to sip. Garnish if you’re feeling fancy."
-          }
-        },
-        "product_ikd8cM": {
-          "type": "product",
-          "settings": {
-            "product_image": "shopify://shop_images/product3.png",
-            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
-            "product_title": "Ginger Mule",
-            "product_desc": "Sweet heat. Cool finish. Smarter mule."
-          }
-        },
-        "product_rDziC6": {
-          "type": "product",
-          "settings": {
-            "product_image": "shopify://shop_images/product2.png",
-            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
-            "product_title": "Ginger Mule",
-            "product_desc": "Sweet heat. Cool finish. Smarter mule."
-          }
-        },
-        "product_QmAeLp": {
-          "type": "product",
-          "settings": {
-            "product_image": "shopify://shop_images/product5.png",
-            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
-            "product_title": "Nigroni Spritz",
-            "product_desc": "Italian spirit in a sparkling orange spritz."
-          }
-        },
-        "product_FtkRBx": {
-          "type": "product",
-          "settings": {
-            "product_image": "shopify://shop_images/product4.png",
-            "product_size": "8PK 12oz READY-TO-DRINK CANS  •  $34",
-            "product_title": "Nigroni Spritz",
-            "product_desc": "Italian spirit in a sparkling orange spritz."
-          }
-        }
-      },
-      "block_order": [
-        "product_XUD7YW",
-        "product_ikd8cM",
-        "product_rDziC6",
-        "product_QmAeLp",
-        "product_FtkRBx"
-      ],
-      "name": "Feature Products",
-      "settings": {
-        "bg_color": "rgb(251 249 242)",
-        "feature_heading": "Classic Canned Cocktails",
-        "sub_heading": "Perfectly mixed and ready to sip. Garnish if you’re feeling fancy.",
-        "button_label": "Shop All",
-        "button_link": "#"
-      }
-    },
-    "why_noot_Jc99Kw": {
-      "type": "why-noot",
-      "name": "Why Noot",
-      "settings": {
-        "bg_color": "#e74f1f",
-        "text_color": "#ffffff",
-        "sub_heading": "Inside the BLEND",
-        "heading": "Why Noot",
-        "text": "Born in Australia, crafted for cocktail lovers who want the taste without the trade-offs.",
-        "noot_btn": "Shop Noot",
-        "button_link": "#",
-        "image": "shopify://shop_images/Background.png",
-        "col_heading_1": "Zero Alcohol",
-        "col_text_1": "No alcohol, no sugar, no consequences. Tastes amazing with all natural ingredients.",
-        "col_heading_2": "Nootropic Buzz",
-        "col_text_2": "Functional nootropics give you a\nsocial lift without alcohol or a\nhangover.",
-        "col_heading_3": "Real cocktail Taste",
-        "col_text_3": "Developed with bartenders to\nnail actual cocktail flavor — not\na compromise."
-      }
-    },
-    "social_VMfamA": {
-      "type": "social",
-      "name": "Social",
-      "settings": {
-        "social_image": "shopify://shop_images/left_side.png",
-        "bg_color_1": "#3498DB",
-        "bg_color_2": "#E74C3C",
-        "bg_color_3": "#2ecc71",
-        "sub_heading_1": "EVERYONE’S BUZZING",
-        "heading_1": "\"I bring Noot to every dinner party. Finally, something sophisticated that doesn't leave you foggy the next morning.\"",
-        "author_name_1": "John Doe",
-        "author_location_1": "New York, USA",
-        "sub_heading_2": "THE PARTY FAVORITE",
-        "heading_2": "\"Noot is my go-to for every gathering. It feels refined and enjoyable without the sluggish feeling the next day.\"",
-        "author_name_2": "Michael Carter",
-        "author_location_2": "Miami, Florida",
-        "sub_heading_3": "EVERYONE'S TALKING",
-        "heading_3": "\"Noot has become a staple at every dinner I attend. It's sophisticated and refreshing without the usual next-day haze.\"",
-        "author_name_3": "David Wilson",
-        "author_location_3": "Los Angeles, USA"
-      }
-    },
-    "social_feed_WqxJbp": {
-      "type": "social-feed",
-      "name": "Social Feed",
-      "settings": {
-        "heading": "Jion us @nootdrink",
-        "bg_color": "#fbf9f2",
-        "social_feed_image_1": "shopify://shop_images/edited.png",
-        "social_feed_image_2": "shopify://shop_images/lastimg2.png",
-        "social_feed_image_3": "shopify://shop_images/lastimg3.png",
-        "social_feed_image_4": "shopify://shop_images/lastimg4.png",
-        "social_feed_image_5": "shopify://shop_images/lastimg_e45418ce-b208-4309-9d55-ed803ffe4bf0.png"
       }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection",
-    "banner_nMxKJK",
-    "features_Y3tbCJ",
-    "featured_products_tViiWM",
-    "social_proof_YWcHYL",
-    "featured_products_npypxr",
-    "why_noot_Jc99Kw",
-    "social_VMfamA",
-    "social_feed_WqxJbp"
+    "featured_collection"
   ]
 }

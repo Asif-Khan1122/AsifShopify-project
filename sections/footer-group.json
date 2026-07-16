@@ -11,30 +11,8 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "custom_footer_jqWgym": {
-      "type": "custom-footer",
-      "name": "Custom Footer",
-      "settings": {
-        "show_footer_heading": true,
-        "footer_heading": "Stay Buzzed",
-        "bg_color": "#e74f1f",
-        "footer_description": "Get recipes, first dibs on new flavors and more.",
-        "email_placeholder": "Email Address",
-        "store_name": ". All rights reserved.",
-        "social_instagram_link": "",
-        "social_facebook_link": "",
-        "social_twitter_link": "",
-        "social_youtube_link": "",
-        "shop_menu": "footer",
-        "connect_menu": "footer",
-        "footer_menu": "footer",
-        "menu_heading_1": "Shop",
-        "menu_heading_2": "Connect"
-      }
-    },
     "footer": {
       "type": "footer",
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-1",
         "newsletter_enable": true,
@@ -52,7 +30,6 @@
     }
   },
   "order": [
-    "custom_footer_jqWgym",
     "footer"
   ]
 }
