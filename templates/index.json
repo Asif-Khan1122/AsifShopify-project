@@ -314,6 +314,57 @@
         "padding_block": 80,
         "padding_inline": 68
       }
+    },
+    "gallery_ecRt4e": {
+      "type": "gallery",
+      "blocks": {
+        "image_U4wKix": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Verawood_Tree2_1.png"
+          }
+        },
+        "image_hCMVCb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Chinese_Fan_Palm1_1.png"
+          }
+        },
+        "image_JYNFN7": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_BbEYhQ": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_yzqaVD": {
+          "type": "image",
+          "settings": {}
+        },
+        "image_AEKfHt": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image_U4wKix",
+        "image_hCMVCb",
+        "image_JYNFN7",
+        "image_BbEYhQ",
+        "image_yzqaVD",
+        "image_AEKfHt"
+      ],
+      "name": "Gallery grid",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Our",
+        "heading_accent": "Gallery",
+        "button_label": "View All Gallery",
+        "button_link": "#",
+        "padding_top": 148,
+        "padding_bottom": 148
+      }
     }
   },
   "order": [
@@ -324,6 +375,7 @@
     "image_with_content_fwbhPM",
     "featured_plants_k4AFzD",
     "bulk_services_f8BMHr",
-    "why_choose_us_iJ9FQ4"
+    "why_choose_us_iJ9FQ4",
+    "gallery_ecRt4e"
   ]
 }
