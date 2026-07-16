@@ -273,6 +273,47 @@
         "secondary_btn_hover_color": "#7C8C74",
         "secondary_btn_hover_text_color": "#ffffff"
       }
+    },
+    "why_choose_us_iJ9FQ4": {
+      "type": "why-choose-us",
+      "blocks": {
+        "card_K7nKXa": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/Group_2_2.png",
+            "title": "Rooted In Local Knowledge",
+            "text": "We specialize in Florida-native and climate-resilient plants, ensuring your garden or landscape thrives with minimal maintenance."
+          }
+        },
+        "card_Mehr4n": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/Group_2_1.png",
+            "title": "Rooted In Local Knowledge",
+            "text": "We specialize in Florida-native and climate-resilient plants, ensuring your garden or landscape thrives with minimal maintenance."
+          }
+        },
+        "card_4RHppg": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/Group_2.png",
+            "title": "Rooted In Local Knowledge",
+            "text": "We specialize in Florida-native and climate-resilient plants, ensuring your garden or landscape thrives with minimal maintenance."
+          }
+        }
+      },
+      "block_order": [
+        "card_K7nKXa",
+        "card_Mehr4n",
+        "card_4RHppg"
+      ],
+      "name": "Why Choose Us",
+      "settings": {
+        "bg_color": "#fafafa",
+        "heading": "Why <strong>Choose Us</strong>",
+        "padding_block": 80,
+        "padding_inline": 68
+      }
     }
   },
   "order": [
@@ -282,6 +323,7 @@
     "custom_marquee_cgjNcb",
     "image_with_content_fwbhPM",
     "featured_plants_k4AFzD",
-    "bulk_services_f8BMHr"
+    "bulk_services_f8BMHr",
+    "why_choose_us_iJ9FQ4"
   ]
 }
