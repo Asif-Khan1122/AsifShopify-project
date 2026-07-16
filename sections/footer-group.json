@@ -13,6 +13,26 @@
   "sections": {
     "homepage_footer_zYJ3Kr": {
       "type": "homepage-footer",
+      "blocks": {
+        "menu_link_XkriQD": {
+          "type": "menu_link",
+          "settings": {
+            "label": "Home",
+            "link": "#"
+          }
+        },
+        "menu_link_6tLVXi": {
+          "type": "menu_link",
+          "settings": {
+            "label": "About",
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "menu_link_XkriQD",
+        "menu_link_6tLVXi"
+      ],
       "name": "Homepage Footer",
       "settings": {
         "padding_top": 60,
