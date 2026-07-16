@@ -160,6 +160,16 @@
         "btn_title": "Learn More About Us",
         "btn_url": "#"
       }
+    },
+    "featured_plants_k4AFzD": {
+      "type": "featured-plants",
+      "name": "Featured Plants",
+      "settings": {
+        "bg_color": "#EEEEEE",
+        "heading": "Featured <strong>Plants</strong>",
+        "view_all_btn": "View All Plants",
+        "view_all_url": "#"
+      }
     }
   },
   "order": [
@@ -167,6 +177,7 @@
     "featured_collection",
     "banner_custom_D6ccqH",
     "custom_marquee_cgjNcb",
-    "image_with_content_fwbhPM"
+    "image_with_content_fwbhPM",
+    "featured_plants_k4AFzD"
   ]
 }
