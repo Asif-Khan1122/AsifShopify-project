@@ -27,11 +27,19 @@
             "label": "About",
             "link": "#"
           }
+        },
+        "menu_link_fRMtaW": {
+          "type": "menu_link",
+          "settings": {
+            "label": "Shop Plants",
+            "link": "#"
+          }
         }
       },
       "block_order": [
         "menu_link_XkriQD",
-        "menu_link_6tLVXi"
+        "menu_link_6tLVXi",
+        "menu_link_fRMtaW"
       ],
       "name": "Homepage Footer",
       "settings": {
