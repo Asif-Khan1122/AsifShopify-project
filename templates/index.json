@@ -163,6 +163,22 @@
     },
     "featured_plants_k4AFzD": {
       "type": "featured-plants",
+      "blocks": {
+        "plant_rDFCmt": {
+          "type": "plant",
+          "settings": {
+            "plant_img": "shopify://shop_images/Desert_Rose_Bonsai.png",
+            "content_heading": "Green Island Ficus",
+            "content_desc": "Glossy, compact foliage for hedges or border",
+            "featured_plant_price": "3-Gallon Pot: $5.46",
+            "cart_btn": "Add To Cart",
+            "cart_url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "plant_rDFCmt"
+      ],
       "name": "Featured Plants",
       "settings": {
         "bg_color": "#EEEEEE",
