@@ -65,10 +65,26 @@
             "button_text": "Home",
             "button_link": "#"
           }
+        },
+        "menu_item_CaNnCm": {
+          "type": "menu_item",
+          "settings": {
+            "button_text": "About",
+            "button_link": "#"
+          }
+        },
+        "menu_item_gUFHRP": {
+          "type": "menu_item",
+          "settings": {
+            "button_text": "Shop Plants",
+            "button_link": "#"
+          }
         }
       },
       "block_order": [
-        "menu_item_hPJfTp"
+        "menu_item_hPJfTp",
+        "menu_item_CaNnCm",
+        "menu_item_gUFHRP"
       ],
       "name": "Custom Header",
       "settings": {
