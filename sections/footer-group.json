@@ -22,6 +22,14 @@
             "link": "#"
           }
         },
+        "contact_item_7dDmQp": {
+          "type": "contact_item",
+          "settings": {
+            "label": "Phone",
+            "value": "(Add your number here)",
+            "link": "#"
+          }
+        },
         "menu_link_XkriQD": {
           "type": "menu_link",
           "settings": {
@@ -53,6 +61,7 @@
       },
       "block_order": [
         "contact_item_h9AKME",
+        "contact_item_7dDmQp",
         "menu_link_XkriQD",
         "menu_link_6tLVXi",
         "menu_link_fRMtaW",
