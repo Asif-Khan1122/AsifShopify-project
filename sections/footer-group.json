@@ -11,6 +11,25 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "homepage_footer_zYJ3Kr": {
+      "type": "homepage-footer",
+      "name": "Homepage Footer",
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 68,
+        "bg_color": "#d8ddd5",
+        "brand_logo_img": "shopify://shop_images/LOGO_2.png",
+        "description": "Questions about a plant or order? Reach out we’re passionate about what we grow.",
+        "contact_info": "📧 ecoraicesnative@gmail.com 📍 Based in Florida | 🌴 Local Pickup & Delivery Options",
+        "title": "Quick Links",
+        "contact_title": "Visit Us",
+        "social_title": "Socials",
+        "last_title": "© 2025 All Rights Reserved",
+        "instagram_link": "",
+        "facebook_link": "",
+        "twitter_link": ""
+      }
+    },
     "footer": {
       "type": "footer",
       "disabled": true,
@@ -31,6 +50,7 @@
     }
   },
   "order": [
+    "homepage_footer_zYJ3Kr",
     "footer"
   ]
 }
