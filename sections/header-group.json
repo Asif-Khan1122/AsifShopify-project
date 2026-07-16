@@ -97,7 +97,7 @@
       "name": "Custom Header",
       "settings": {
         "logo": "shopify://shop_images/LOGO_2.png",
-        "btn_background_color": "#FBF8E8",
+        "btn_background_color": "#fbf8e8",
         "logo_width": 85,
         "logo_height": 80,
         "padding_top": 0,
