@@ -3,18 +3,18 @@
     width: 100%;
 
   }
-  .choose_us .choose_us .container {
+  .choose_us .container {
     max-width: 1380px;
     margin: 0 auto;
     padding: 0 20px;
   }
 
-  .choose_us_main{
+  .choose_us .choose_us_main{
     background-color: {{ section.settings.bg_color }};
     padding: {{ section.settings.padding_block }}px {{ section.settings.padding_inline }}px;
     border-radius: 20px;
   }
-  .choose_us_heading {
+  .choose_us .choose_us_heading {
     text-align: center;
     font-size: clamp(28px, 4vw, 44px);
     font-weight: 800;
@@ -22,23 +22,23 @@
     color: #222222;
     margin-bottom: clamp(28px, 4vw, 48px);
   }
-  .choose_us_heading strong {
+  .choose_us .choose_us_heading strong {
     color: #9C747C;
     font-weight: 800;
   }
-  .choose_us_inner {
+  .choose_us .choose_us_inner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
   }
-  .choose_us_card {
+  .choose_us .choose_us_card {
     background: #ffffff;
     border: 1px solid #ECECEC;
     border-radius: 16px;
     padding: 32px 28px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.04);
   }
-  .choose_us_card .icon_wrap {
+  .choose_us .choose_us_card .icon_wrap {
     width: 48px;
     height: 48px;
     display: flex;
@@ -46,36 +46,35 @@
     justify-content: center;
     margin-bottom: 20px;
   }
-  .choose_us_card .icon_wrap img {
+  .choose_us .choose_us_card .icon_wrap img {
     width: 100%;
     height: 100%;
     object-fit: contain;
   }
-  .choose_us_card h3 {
+  .choose_us .choose_us_card h3 {
     font-size: 20px;
     font-weight: 700;
     color: #222222;
     margin-bottom: 12px;
     font-family: 'Plus Jakarta Sans';
   }
-  .choose_us_card p {
+  .choose_us .choose_us_card p {
     font-size: 15px;
     line-height: 1.6;
     color: #666666;
   }
 
   @media (max-width: 1024px){
-    .choose_us_inner {
+    .choose_us .choose_us_inner {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 
   @media (max-width: 749px){
-    .choose_us_main {
-       padding: {{ section.settings.padding_block | times: 0.5 | round }}px {{ section.settings.padding_inline | times: 0.5 | round }}px;
-
+    .choose_us .choose_us_main {
+      padding: {{ section.settings.padding_block | times: 0.5 | round }}px {{ section.settings.padding_inline | times: 0.5 | round }}px;
     }
-    .choose_us_inner {
+    .choose_us .choose_us_inner {
       grid-template-columns: 1fr;
     }
   }
