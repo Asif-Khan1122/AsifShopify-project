@@ -161,26 +161,6 @@
           {% endfor %}
         </ul>
       </div>
-
-      {% comment %}
-        <div class="footer_contact">
-          {% if section.settings.contact_title != blank %}
-            <h3 class="footer_title">{{ section.settings.contact_title }}</h3>
-          {% endif %}
-
-          <ul class="footer_menu">
-            {% for block in section.blocks %}
-              {% if block.type == 'contact_item' %}
-                <li class="footer_contact_item">
-                  <a href="{{ block.settings.link }}" class="footer_link">
-                    {{ block.settings.label_2 }}
-                  </a>
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
-      {% endcomment %}
       <div class="footer_contact">
         {% if section.settings.contact_title != blank %}
           <h3 class="footer_title">{{ section.settings.contact_title }}</h3>
