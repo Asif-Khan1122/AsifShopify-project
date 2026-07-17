@@ -171,7 +171,11 @@
       display: block;
       opacity: 1;
     }
-
+    /* Add this to your CSS */
+    .header-spacer {
+      height: calc({{ section.settings.padding_top }}px + {{ section.settings.padding_bottom }}px + 80px); /* 80px is approximate header height, adjust as needed */
+      width: 100%;
+    }
     /* ===== RESPONSIVE ===== */
     @media screen and (max-width: 989px) {
       .custom_header .header_main {
