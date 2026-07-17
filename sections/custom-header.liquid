@@ -13,8 +13,14 @@
     top: 0;
     left: 0;
     right: 0;
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
   }
 
+  .custom_header.is_scrolled {
+    background-color: {{ section.settings.scrolled_background_color }};
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
   .custom_header .container {
     max-width: {{ section.settings.container_width }}px;
     margin: 0 auto;
