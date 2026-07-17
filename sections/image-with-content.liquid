@@ -87,8 +87,8 @@
   @media screen and (max-width: 1024px){
 
   .image_with_text {
-    padding-top: {{ section.settings.padding_top_mbl }}px;
-    padding-bottom: {{ section.settings.padding_bottom_mbl }}px;
+    padding-top: calc({{ section.settings.padding_top_mbl }}px * 0.5);
+    padding-bottom: calc({{ section.settings.padding_bottom_mbl }}px * 0.5;)
   }
   .image_with_text .inner{
     flex-direction: column;
