@@ -146,6 +146,12 @@
     display: flex;
   }
   }
+  @media (max-width: 525px){
+    .bulk_services {
+      padding-top: {{ section.settings.padding_top | times: 0.3 | round }}px;
+      padding-bottom: {{ section.settings.padding_bottom | times: 0.3 | round }}px;
+    }
+  }
 {% endstyle %}
 
 <section class="bulk_services">
