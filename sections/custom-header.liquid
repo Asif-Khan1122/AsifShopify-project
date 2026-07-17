@@ -339,35 +339,48 @@
 </header>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var hamburgerBtn = document.getElementById('hamburgerBtn');
-    var mobileNav = document.getElementById('customHeaderNav');
-    var overlay = document.getElementById('mobileMenuOverlay');
+document.addEventListener('DOMContentLoaded', function () {
+  var hamburgerBtn = document.getElementById('hamburgerBtn');
+  var mobileNav = document.getElementById('customHeaderNav');
+  var overlay = document.getElementById('mobileMenuOverlay');
+  var header = document.querySelector('.custom_header');
 
-    function openMenu() {
-      hamburgerBtn.classList.add('active');
-      mobileNav.classList.add('active');
-      overlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
+  function openMenu() {
+    hamburgerBtn.classList.add('active');
+    mobileNav.classList.add('active');
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    hamburgerBtn.classList.remove('active');
+    mobileNav.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  hamburgerBtn.addEventListener('click', function () {
+    if (mobileNav.classList.contains('active')) {
+      closeMenu();
+    } else {
+      openMenu();
     }
-
-    function closeMenu() {
-      hamburgerBtn.classList.remove('active');
-      mobileNav.classList.remove('active');
-      overlay.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-
-    hamburgerBtn.addEventListener('click', function () {
-      if (mobileNav.classList.contains('active')) {
-        closeMenu();
-      } else {
-        openMenu();
-      }
-    });
-
-    overlay.addEventListener('click', closeMenu);
   });
+
+  overlay.addEventListener('click', closeMenu);
+
+  // Scroll par background color add/remove
+  function handleScroll() {
+    if (window.scrollY > 20) {
+      header.classList.add('is_scrolled');
+    } else {
+      header.classList.remove('is_scrolled');
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll);
+  handleScroll(); // page load par bhi check kare (agar user already scrolled ho)
+});
 </script>
 
 {% schema %}
