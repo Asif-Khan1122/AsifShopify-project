@@ -369,7 +369,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   overlay.addEventListener('click', closeMenu);
 
-  // Scroll par background color add/remove
   function handleScroll() {
     if (window.scrollY > 20) {
       header.classList.add('is_scrolled');
@@ -379,7 +378,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   window.addEventListener('scroll', handleScroll);
-  handleScroll(); // page load par bhi check kare (agar user already scrolled ho)
+  handleScroll();
 });
 </script>
 
