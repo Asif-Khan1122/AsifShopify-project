@@ -97,8 +97,8 @@
 
   @media screen and (max-width: 989px) {
     .gallery_section {
-      padding-top: {{ section.settings.padding_top }}px; 
-      padding-bottom: {{ section.settings.padding_bottom }}px;"
+      padding-top: calc({{ section.settings.padding_top }}px * 0.8); 
+      padding-bottom: calc({{ section.settings.padding_bottom }}px * 0.8);"
     }
     .gallery_grid {
       grid-template-columns: repeat(2, 1fr);
