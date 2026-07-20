@@ -258,7 +258,6 @@
             <a href="{{ routes.root_url }}">
               <img
                 src="{{ section.settings.logo | image_url }}"
-                alt="{{ section.settings.logo_alt | escape }}"
                 width="{{ section.settings.logo_width }}"
                 height="{{ section.settings.logo_height }}"
               >
@@ -410,11 +409,6 @@ document.addEventListener('DOMContentLoaded', function () {
       "step": 5,
       "unit": "px",
       "default": 80
-    },
-    {
-      "type": "text",
-      "id": "logo_alt",
-      "label": "Logo Alt Text"
     },
     {
       "type": "text",
