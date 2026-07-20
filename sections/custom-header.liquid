@@ -384,48 +384,102 @@ document.addEventListener('DOMContentLoaded', function () {
 {% schema %}
 {
   "name": "Custom Header",
+  "class": "custom-header-section",
   "settings": [
+    {
+      "type": "header",
+      "content": "Logo Settings"
+    },
     {
       "type": "image_picker",
       "id": "logo",
       "label": "Logo"
     },
     {
-      "type": "range",
-      "id": "logo_width",
-      "label": "Logo Width",
-      "min": 85,
-      "max": 255,
-      "step": 10,
-      "unit": "px",
-      "default": 85
+      "type": "image_picker",
+      "id": "mobile_logo",
+      "label": "Mobile Logo",
+      "info": "Optional: Different logo for mobile devices"
     },
     {
       "type": "range",
-      "id": "logo_height",
-      "label": "Logo Height",
-      "min": 45,
-      "max": 120,
+      "id": "logo_width",
+      "label": "Logo Width (Desktop)",
+      "min": 85,
+      "max": 255,
       "step": 5,
       "unit": "px",
-      "default": 80
+      "default": 150
+    },
+    {
+      "type": "range",
+      "id": "logo_mobile_width",
+      "label": "Logo Width (Mobile)",
+      "min": 60,
+      "max": 180,
+      "step": 5,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_sticky_header",
+      "label": "Enable Sticky Header",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "sticky_style",
+      "label": "Sticky Header Style",
+      "options": [
+        { "value": "slide_down", "label": "Slide Down" },
+        { "value": "fade_in", "label": "Fade In" },
+        { "value": "instant", "label": "Instant" }
+      ],
+      "default": "slide_down"
+    },
+    {
+      "type": "header",
+      "content": "Navigation Settings"
+    },
+    {
+      "type": "select",
+      "id": "menu_alignment",
+      "label": "Menu Alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
     },
     {
       "type": "text",
       "id": "shop_now_text",
-      "label": "Shop Now Text",
-      "default": "Shop Now"
+      "label": "Shop Now Button Text",
+      "default": "Shop Now",
+      "info": "Leave empty to hide the button"
     },
     {
       "type": "url",
       "id": "shop_now_link",
-      "label": "Shop Now Link"
+      "label": "Shop Now Button Link",
+      "info": "Required if button text is set"
     },
     {
-      "type": "color",
-      "id": "link_color",
-      "label": "Link Color",
-      "default": "#000000"
+      "type": "select",
+      "id": "btn_style",
+      "label": "Button Style",
+      "options": [
+        { "value": "primary", "label": "Primary" },
+        { "value": "secondary", "label": "Secondary" },
+        { "value": "outline", "label": "Outline" }
+      ],
+      "default": "primary"
+    },
+    {
+      "type": "header",
+      "content": "Color Settings"
     },
     {
       "type": "color",
@@ -434,14 +488,23 @@ document.addEventListener('DOMContentLoaded', function () {
       "default": "#d1d7de"
     },
     {
-      "type": "header",
-      "content": "Section Color Settings"
+      "type": "color",
+      "id": "scrolled_background_color",
+      "label": "Sticky Background Color",
+      "default": "#ffffff",
+      "info": "Background when header is sticky/scrolled"
     },
     {
       "type": "color",
-      "id": "scrolled_background_color",
-      "label": "Scrolled Background Color",
-      "default": "#ffffff"
+      "id": "link_color",
+      "label": "Link Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "link_hover_color",
+      "label": "Link Hover Color",
+      "default": "#666666"
     },
     {
       "type": "color",
@@ -450,39 +513,77 @@ document.addEventListener('DOMContentLoaded', function () {
       "default": "#FBF8E8"
     },
     {
-      "type": "header",
-      "content": "Section Spacing Settings"
+      "type": "color",
+      "id": "btn_text_color",
+      "label": "Button Text Color",
+      "default": "#000000"
     },
-        {
+    {
+      "type": "color",
+      "id": "btn_hover_background",
+      "label": "Button Hover Background",
+      "default": "#e8e5d5"
+    },
+    {
+      "type": "header",
+      "content": "Spacing & Layout"
+    },
+    {
       "type": "range",
       "id": "padding_top",
       "label": "Padding Top",
       "min": 0,
-      "max": 48,
-      "step": 4,
+      "max": 60,
+      "step": 2,
       "unit": "px",
-      "default": 8
+      "default": 12
     },
     {
       "type": "range",
       "id": "padding_bottom",
       "label": "Padding Bottom",
       "min": 0,
-      "max": 48,
-      "step": 4,
+      "max": 60,
+      "step": 2,
       "unit": "px",
-      "default": 8
+      "default": 12
     },
     {
       "type": "range",
       "id": "container_width",
-      "label": "Container Width",
+      "label": "Max Container Width",
       "min": 1000,
-      "max": 1600,
+      "max": 2000,
       "step": 20,
       "unit": "px",
-      "default": 1260
+      "default": 1400
     },
+    {
+      "type": "range",
+      "id": "menu_gap",
+      "label": "Menu Item Spacing",
+      "min": 10,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Mobile Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_collapsible",
+      "label": "Collapsible Mobile Menu",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "mobile_menu_background",
+      "label": "Mobile Menu Background",
+      "default": "#ffffff"
+    }
   ],
   "blocks": [
     {
@@ -492,13 +593,30 @@ document.addEventListener('DOMContentLoaded', function () {
         {
           "type": "text",
           "id": "button_text",
-          "label": "Button Text",
+          "label": "Text",
           "default": "Home"
         },
         {
           "type": "url",
           "id": "button_link",
-          "label": "Button Link"
+          "label": "Link"
+        },
+        {
+          "type": "checkbox",
+          "id": "open_in_new_tab",
+          "label": "Open in New Tab",
+          "default": false
+        },
+        {
+          "type": "select",
+          "id": "font_weight",
+          "label": "Font Weight",
+          "options": [
+            { "value": "normal", "label": "Normal" },
+            { "value": "bold", "label": "Bold" },
+            { "value": "600", "label": "Semi-Bold" }
+          ],
+          "default": "normal"
         }
       ]
     }
@@ -506,7 +624,35 @@ document.addEventListener('DOMContentLoaded', function () {
   "presets": [
     {
       "name": "Custom Header",
-      "category": "Custom"
+      "category": "Custom Sections",
+      "settings": {
+        "logo_width": 150,
+        "background_color": "#d1d7de",
+        "link_color": "#000000"
+      },
+      "blocks": [
+        {
+          "type": "menu_item",
+          "settings": {
+            "button_text": "Home",
+            "button_link": "/"
+          }
+        },
+        {
+          "type": "menu_item",
+          "settings": {
+            "button_text": "Shop",
+            "button_link": "/collections/all"
+          }
+        },
+        {
+          "type": "menu_item",
+          "settings": {
+            "button_text": "About",
+            "button_link": "/pages/about"
+          }
+        }
+      ]
     }
   ]
 }
