@@ -679,7 +679,6 @@ document.addEventListener('DOMContentLoaded', function () {
     transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
   }
 
-  /* Sticky styles based on setting */
   {% if section.settings.enable_sticky_header %}
     .custom_header.is_scrolled {
       background-color: {{ section.settings.scrolled_background_color }};
