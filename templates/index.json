@@ -141,7 +141,8 @@
       ],
       "name": "Custom Marquee",
       "settings": {
-        "background_color": "#9c747c"
+        "background_color": "#9c747c",
+        "scroll_speed": 60
       }
     },
     "image_with_content_fwbhPM": {
@@ -264,13 +265,13 @@
         "primary_btn_url": "#",
         "primary_btn_color": "#fff",
         "primary_btn_text_color": "#222",
-        "primary_btn_hover_color": "#7C8C74",
+        "primary_btn_hover_color": "#7c8c74",
         "primary_btn_hover_text_color": "#ffffff",
         "secondary_btn_title": "Schedule a Call",
         "secondary_btn_url": "#",
         "secondary_btn_color": "#fff",
         "secondary_btn_text_color": "#222",
-        "secondary_btn_hover_color": "#7C8C74",
+        "secondary_btn_hover_color": "#7c8c74",
         "secondary_btn_hover_text_color": "#ffffff"
       }
     },
