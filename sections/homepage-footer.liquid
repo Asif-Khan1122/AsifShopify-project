@@ -183,17 +183,17 @@
           <h3 class="footer_title">{{ section.settings.title }}</h3>
         {% endif %}
 
-        <ul class="footer_menu">
-          {% for block in section.blocks %}
-            {% if block.type == 'menu_link' %}
-              <li class="footer_menu_item">
-                <a href="{{ block.settings.link }}" class="footer_link">
-                  {{ block.settings.label }}
-                </a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
+       <ul class="footer_menu">
+        {% for block in section.blocks %}
+          {% if block.type == 'menu_link' %}
+            <li class="footer_menu_item">
+              <a href="{{ block.settings.link }}" class="footer_link">
+                {{ block.settings.label }}
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
       </div>
       <div class="footer_contact">
         {% if section.settings.contact_title != blank %}
