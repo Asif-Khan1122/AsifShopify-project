@@ -58,56 +58,30 @@
     },
     "custom_header_jqE3xT": {
       "type": "custom-header",
-      "blocks": {
-        "menu_item_hPJfTp": {
-          "type": "menu_item",
-          "settings": {
-            "button_text": "Home",
-            "button_link": "#"
-          }
-        },
-        "menu_item_CaNnCm": {
-          "type": "menu_item",
-          "settings": {
-            "button_text": "About",
-            "button_link": "#"
-          }
-        },
-        "menu_item_gUFHRP": {
-          "type": "menu_item",
-          "settings": {
-            "button_text": "Shop Plants",
-            "button_link": "#"
-          }
-        },
-        "menu_item_wtAttr": {
-          "type": "menu_item",
-          "settings": {
-            "button_text": "Contact",
-            "button_link": "#"
-          }
-        }
-      },
-      "block_order": [
-        "menu_item_hPJfTp",
-        "menu_item_CaNnCm",
-        "menu_item_gUFHRP",
-        "menu_item_wtAttr"
-      ],
       "name": "Custom Header",
       "settings": {
         "logo": "shopify://shop_images/LOGO_2.png",
-        "btn_background_color": "#fbf8e8",
         "logo_width": 85,
-        "logo_height": 80,
-        "padding_top": 5,
-        "padding_bottom": 5,
-        "container_width": 1260,
-        "logo_alt": "",
+        "logo_mobile_width": 60,
+        "menu": "header-menu",
+        "enable_sticky_header": true,
+        "sticky_style": "slide_down",
         "shop_now_text": "Shop Now",
         "shop_now_link": "#",
+        "btn_style": "primary",
+        "background_color": "#d1d7de",
+        "scrolled_background_color": "#ffffff",
         "link_color": "#000000",
-        "background_color": "#d1d7de"
+        "link_hover_color": "#000000",
+        "btn_background_color": "#fbf8e8",
+        "btn_text_color": "#000000",
+        "btn_hover_background": "#e8e5d5",
+        "padding_top": 10,
+        "padding_bottom": 10,
+        "container_width": 1260,
+        "menu_gap": 20,
+        "mobile_collapsible": true,
+        "mobile_menu_background": "#ffffff"
       }
     }
   },
