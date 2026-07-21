@@ -14,15 +14,14 @@
   }
 
   .custom_marquee .custom_marquee_inner {
-    animation-duration: {{ section.settings.scroll_speed  }}s;
-    display: inline-flex;
-    width: max-content;
-    {% comment %} animation: scroll 20s linear infinite; {% endcomment %}
-    white-space: nowrap;
-    flex-shrink: 0;
-    align-items: center;
-    will-change: transform;
-  }
+  display: inline-flex;
+  width: max-content;
+  white-space: nowrap;
+  flex-shrink: 0;
+  align-items: center;
+  will-change: transform;
+  animation: scroll {{ section.settings.scroll_speed }}s linear infinite;
+}
 
   .custom_marquee:hover .custom_marquee_inner {
     animation-play-state: paused;
