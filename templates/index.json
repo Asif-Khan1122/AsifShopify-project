@@ -142,7 +142,7 @@
       "name": "Custom Marquee",
       "settings": {
         "background_color": "#9c747c",
-        "scroll_speed": 60
+        "scroll_speed": 20
       }
     },
     "image_with_content_fwbhPM": {
