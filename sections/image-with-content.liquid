@@ -71,7 +71,7 @@
     line-height: 1.32;
   }
 
-  .image_with_text a {
+  .image_with_text .about_btn a {
     padding: 16px 30px;
     border-radius: 40px;
     background: #7C8C74;
@@ -141,7 +141,7 @@
           {% endif %}
         </div>
         {% if section.settings.btn_title != blank and section.settings.btn_url != blank %}
-          <a href="{{ section.settings.btn_url }}">{{ section.settings.btn_title }}</a>
+          <a href="{{ section.settings.btn_url }}" class="about_btn">{{ section.settings.btn_title }}</a>
         {% endif %}
       </div>
     </div>
