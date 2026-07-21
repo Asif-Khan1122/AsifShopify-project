@@ -275,34 +275,14 @@
 </footer>
 
 {% schema %}
-{
-  "name": "Homepage Footer",
-  "settings": [
     {
-  "type": "link_list",
-  "id": "footer_menu",
-  "label": "Footer Menu",
-  "default": "footer"
-},
-    {
-      "type": "range",
-      "id": "padding_top",
-      "label": "Padding Top",
-      "min": 0,
-      "max": 120,
-      "step": 4,
-      "unit": "px",
-      "default": 60
-    },
-    {
-      "type": "range",
-      "id": "padding_bottom",
-      "label": "Padding Bottom",
-      "min": 0,
-      "max": 120,
-      "step": 4,
-      "unit": "px",
-      "default": 68
+      "name": "Homepage Footer",
+      "settings": [
+        {
+      "type": "link_list",
+      "id": "footer_menu",
+      "label": "Footer Menu",
+      "default": "footer"
     },
     {
       "type": "color",
@@ -366,7 +346,31 @@
       "type": "url",
       "id": "twitter_link",
       "label": "Twitter/X Link"
-    }
+    },
+    {
+      "type": "header",
+      "content": "Spacing & Layout"
+    },
+      {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "default": 68
+    },
   ],
 
   "blocks": [
