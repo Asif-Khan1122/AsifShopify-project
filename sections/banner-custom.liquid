@@ -286,7 +286,6 @@
         <div class="banner_image">
           <img
             src="{{ section.settings.image | image_url }}"
-            alt="{{ section.settings.image_alt }}"
             width="{{ section.settings.image.width }}"
             height="{{ section.settings.image.height }}"
           >
@@ -364,13 +363,7 @@
     {
       "type": "image_picker",
       "id": "image",
-      "label": "Right image"
-    },
-    {
-      "type": "text",
-      "id": "image_alt",
-      "label": "Image alt text",
-      "default": "Banner image"
+      "label": "Right Image"
     },
     {
       "type": "textarea",
