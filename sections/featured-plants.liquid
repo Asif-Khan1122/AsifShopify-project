@@ -5,12 +5,6 @@
     padding-bottom: clamp(30px, 5vw, {{ section.settings.padding_bottom }}px);
   }
 
-  .featured_plant .container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
-
   .featured_plant .featured_plant_inner {
     display: flex;
     flex-direction: column;
@@ -157,7 +151,7 @@
 {% endstyle %}
 
 <section class="featured_plant">
-  <div class="container">
+  <div class="page-width">
     <div class="featured_plant_inner">
       {% if section.settings.heading != blank %}
         <h2 class="featured_plant_heading">{{ section.settings.heading }}</h2>
