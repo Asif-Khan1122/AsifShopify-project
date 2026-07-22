@@ -37,50 +37,16 @@
             "value": "Ecoraíces Native Nursery  Florida, USA",
             "link": "#"
           }
-        },
-        "menu_link_XkriQD": {
-          "type": "menu_link",
-          "settings": {
-            "label": "Home",
-            "link": "#"
-          }
-        },
-        "menu_link_6tLVXi": {
-          "type": "menu_link",
-          "settings": {
-            "label": "About",
-            "link": "#"
-          }
-        },
-        "menu_link_fRMtaW": {
-          "type": "menu_link",
-          "settings": {
-            "label": "Shop Plants",
-            "link": "#"
-          }
-        },
-        "menu_link_iRLXcB": {
-          "type": "menu_link",
-          "settings": {
-            "label": "Contact",
-            "link": "#"
-          }
         }
       },
       "block_order": [
         "contact_item_h9AKME",
         "contact_item_7dDmQp",
-        "contact_item_9nJf8L",
-        "menu_link_XkriQD",
-        "menu_link_6tLVXi",
-        "menu_link_fRMtaW",
-        "menu_link_iRLXcB"
+        "contact_item_9nJf8L"
       ],
       "name": "Homepage Footer",
       "settings": {
-        "padding_top": 60,
-        "padding_bottom": 68,
-        "bg_color": "#d8ddd5",
+        "footer_menu": "footer",
         "brand_logo_img": "shopify://shop_images/LOGO_2.png",
         "description": "Questions about a plant or order? Reach out we’re passionate about what we grow.",
         "contact_info": "📧 ecoraicesnative@gmail.com 📍 Based in Florida | 🌴 Local Pickup & Delivery Options",
@@ -90,7 +56,10 @@
         "last_title": "© 2026 All Rights Reserved",
         "instagram_link": "#",
         "facebook_link": "#",
-        "twitter_link": "#"
+        "twitter_link": "#",
+        "bg_color": "#d8ddd5",
+        "padding_top": 60,
+        "padding_bottom": 68
       }
     },
     "footer": {

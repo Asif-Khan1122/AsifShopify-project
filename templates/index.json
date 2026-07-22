@@ -9,75 +9,6 @@
  */
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "button"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "image_behavior": "none",
-        "desktop_content_position": "bottom-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "scheme-3",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "center",
-        "show_text_below": false
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "collection": "all",
-        "products_to_show": 8,
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
-    },
     "banner_custom_D6ccqH": {
       "type": "banner-custom",
       "name": "Banner custom",
@@ -89,13 +20,12 @@
         "btn_link_1": "#",
         "btn_label_2": "Get a Quote for Bulk Orders",
         "btn_link_2": "#",
-        "background_color": "#f2f2f2",
         "before_image": "shopify://shop_images/afab7b52f10a3b9dadfd79aaaf1651ea355ff84b_1.jpg",
         "image": "shopify://shop_images/Tropical_Milkweed_1_1.png",
-        "image_alt": "Banner image",
         "image_text": "We are passionate about sustainability supporting and pollinators like Monarch butterflies.",
         "image_link_label": "About Us",
-        "banner_image_link": "#"
+        "banner_image_link": "#",
+        "background_color": "#f2f2f2"
       }
     },
     "custom_marquee_cgjNcb": {
@@ -141,25 +71,37 @@
       ],
       "name": "Custom Marquee",
       "settings": {
-        "background_color": "#9c747c",
-        "scroll_speed": 20
+        "scroll_speed": 20,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "background_color": "#9c747c"
       }
     },
     "image_with_content_fwbhPM": {
       "type": "image-with-content",
       "name": "Image With Text",
       "settings": {
-        "padding_top": 148,
-        "padding_bottom": 140,
-        "padding_top_mbl": 60,
-        "padding_bottom_mbl": 60,
         "media_img": "shopify://shop_images/Group_1597883209.png",
         "content_heading": "About <strong>Ecoraíces </strong>Native Plants",
         "sub_heading": "Rooted in Nature, Grown with Purpose",
         "description_1": "At Ecoraíces, we specialize in high-quality, Florida-friendly plants that bring vibrancy and biodiversity to both homes and commercial spaces. Whether you’re a local gardener, landscape designer, or business owner, we provide carefully nurtured greenery — from ornamental shrubs to unique native groundcovers.",
         "description_2": "We are passionate about sustainability, soil health, and supporting pollinators like Monarch butterflies. Every plant is grown with care, priced accessibly, and ready to thrive in your space.",
         "btn_title": "Learn More About Us",
-        "btn_url": "#"
+        "btn_url": "#",
+        "heading_color": "#000000",
+        "subheading_color": "#333333",
+        "text_color": "#555555",
+        "accent_color": "#9c747c",
+        "button_background": "#7c8c74",
+        "button_text_color": "#ffffff",
+        "button_hover_background": "#ffffff",
+        "button_hover_text_color": "#000000",
+        "button_hover_border": "#000000",
+        "image_border_radius": 12,
+        "padding_top": 148,
+        "padding_bottom": 140,
+        "padding_top_mbl": 60,
+        "padding_bottom_mbl": 60
       }
     },
     "featured_plants_k4AFzD": {
@@ -242,19 +184,16 @@
       ],
       "name": "Featured Plants",
       "settings": {
-        "bg_color": "#eeeeee",
         "heading": "Featured <strong>Plants</strong>",
         "view_all_btn": "View All Plants",
-        "view_all_url": "#"
+        "view_all_url": "#",
+        "bg_color": "#eeeeee"
       }
     },
     "bulk_services_f8BMHr": {
       "type": "bulk-services",
       "name": "Bulk Services",
       "settings": {
-        "bg_color": "#fefefe",
-        "padding_top": 148,
-        "padding_bottom": 140,
         "heading": "Bulk Orders & <strong>Business Services</strong>",
         "description": "Are you a landscape architect, business, or municipality? We work directly with professionals to provide bulk pricing, liners, and guidance on native planting.",
         "li_desc_1": "Available in Liners & Larger Pots",
@@ -272,7 +211,10 @@
         "secondary_btn_color": "#fff",
         "secondary_btn_text_color": "#222",
         "secondary_btn_hover_color": "#7c8c74",
-        "secondary_btn_hover_text_color": "#ffffff"
+        "secondary_btn_hover_text_color": "#ffffff",
+        "padding_top": 148,
+        "padding_bottom": 140,
+        "bg_color": "#fefefe"
       }
     },
     "why_choose_us_iJ9FQ4": {
@@ -377,8 +319,6 @@
     }
   },
   "order": [
-    "image_banner",
-    "featured_collection",
     "banner_custom_D6ccqH",
     "custom_marquee_cgjNcb",
     "image_with_content_fwbhPM",
