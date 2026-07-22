@@ -1,6 +1,8 @@
 {% style %}
   .featured_plant {
     width: 100%;
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
   }
 
   .featured_plant .container {
@@ -274,12 +276,26 @@
       "type": "header",
       "content": "BG Color"
     },
-       {
+    {
       "type": "color",
       "id": "bg_color",
       "label": "BG Color",
       "default": "#EEEEEE"
     },
+    {
+      "type": "header",
+      "content": "Spacing & Layout"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "max": 100,
+      "min": 20,
+      "unit": "px",
+      "step": 4,
+      "default": 68
+    }
   ],
   "blocks": [
     {
