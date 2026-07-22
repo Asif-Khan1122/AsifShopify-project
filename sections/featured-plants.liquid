@@ -1,8 +1,8 @@
 {% style %}
   .featured_plant {
     width: 100%;
-    margin-top: clamp(30px, 5vw, {{ section.settings.padding_top }}px);
-    margin-bottom: clamp(30px, 5vw, {{ section.settings.padding_bottom }}px);
+    margin-top: clamp(30px, 5vw, {{ section.settings.margin_top }}px);
+    margin-bottom: clamp(30px, 5vw, {{ section.settings.margin_bottom }}px);
   }
 
   .featured_plant .featured_plant_inner {
@@ -282,8 +282,8 @@
     },
     {
       "type": "range",
-      "id": "padding_top",
-      "label": "Padding Top",
+      "id": "margin_top",
+      "label": "Margin Top",
       "max": 100,
       "min": 20,
       "unit": "px",
@@ -292,8 +292,8 @@
     },
     {
       "type": "range",
-      "id": "padding_bottom",
-      "label": "Padding Bottom",
+      "id": "margin_bottom",
+      "label": "Margin Bottom",
       "max": 100,
       "min": 20,
       "unit": "px",
