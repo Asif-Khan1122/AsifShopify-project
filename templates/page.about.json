@@ -16,9 +16,20 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "about_hero_dqFEgy": {
+      "type": "about-hero",
+      "name": "About hero banner",
+      "settings": {
+        "heading": "About Ecoraíces Native Plants",
+        "bg_image": "shopify://shop_images/2_1_a57b2ed3-0ed9-4b3f-b64c-103e6229885d.png",
+        "hero_height": 600,
+        "text_color": "#ffffff"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "about_hero_dqFEgy"
   ]
 }
