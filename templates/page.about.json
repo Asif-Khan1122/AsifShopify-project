@@ -100,12 +100,33 @@
         "card_padding_top": 32,
         "card_padding_bottom": 32
       }
+    },
+    "contact_us_GHwdfq": {
+      "type": "contact-us",
+      "name": "Contact Us",
+      "settings": {
+        "heading_start": "Lets",
+        "heading_highlight": "connect",
+        "subtext": "We'd love to hear from you! Whether you have a question about our plants, need help with an order, or want to discuss a wholesale request, we're here to help.",
+        "image": "shopify://shop_images/Beauty_Leaf_Tree2.png",
+        "name_label": "Name",
+        "email_label": "Email",
+        "number_label": "Number",
+        "message_label": "Message",
+        "textarea_rows": 5,
+        "button_label": "Submit Now",
+        "success_message": "Thanks! Your message has been sent.",
+        "button_bg": "#A0798C",
+        "button_text_color": "#FFFFFF",
+        "highlight_color": "#8FA383"
+      }
     }
   },
   "order": [
     "main",
     "about_hero_dqFEgy",
     "about_overview_CXyVHH",
-    "feature_cards_gcnxE7"
+    "feature_cards_gcnxE7",
+    "contact_us_GHwdfq"
   ]
 }
