@@ -120,6 +120,65 @@
         "button_text_color": "#FFFFFF",
         "highlight_color": "#8FA383"
       }
+    },
+    "gallery_gMVeat": {
+      "type": "gallery",
+      "blocks": {
+        "image_HhAYEr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Verawood_Tree1_2x_2d5620da-4999-4701-8fbf-54f1f5d6784c.png"
+          }
+        },
+        "image_jMWrXJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Chinese_Fan_Palm1_1.png"
+          }
+        },
+        "image_njkeqk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Beauty_Leaf_Tree1_1.png"
+          }
+        },
+        "image_XatAWU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Green_island_Ficus3_1.png"
+          }
+        },
+        "image_UAJk76": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Beach_creeper2_1.png"
+          }
+        },
+        "image_yiDxyn": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Verawood_Tree2_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_HhAYEr",
+        "image_jMWrXJ",
+        "image_njkeqk",
+        "image_XatAWU",
+        "image_UAJk76",
+        "image_yiDxyn"
+      ],
+      "name": "Gallery grid",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Our",
+        "heading_accent": "Gallery",
+        "button_label": "View All Gallery",
+        "button_link": "",
+        "margin_top": 68,
+        "margin_bottom": 68
+      }
     }
   },
   "order": [
@@ -127,6 +186,7 @@
     "about_hero_dqFEgy",
     "about_overview_CXyVHH",
     "feature_cards_gcnxE7",
-    "contact_us_GHwdfq"
+    "contact_us_GHwdfq",
+    "gallery_gMVeat"
   ]
 }
