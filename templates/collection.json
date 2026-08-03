@@ -11,6 +11,7 @@
   "sections": {
     "banner": {
       "type": "main-collection-banner",
+      "disabled": true,
       "settings": {
         "show_collection_description": false,
         "show_collection_image": false,
@@ -85,10 +86,21 @@
         "card_padding_top": 32,
         "card_padding_bottom": 32
       }
+    },
+    "collection_banner_L3qkEB": {
+      "type": "collection-banner",
+      "name": "Collection hero banner",
+      "settings": {
+        "heading": "Green Island Ficus",
+        "bg_image": "shopify://shop_images/5.png",
+        "hero_height": 600,
+        "text_color": "#ffffff"
+      }
     }
   },
   "order": [
     "banner",
+    "collection_banner_L3qkEB",
     "product-grid",
     "feature_cards_bnBVnf"
   ]
