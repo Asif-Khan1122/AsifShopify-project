@@ -1032,8 +1032,8 @@ h2.title.inline-richtext {
 
 @media screen and (max-width: 989px) {
   .grid--1-col-tablet-down .grid__item {
-    width: 50%;
-    max-width: 50%;
+    width: 49%;
+    max-width: 49%;
   }
 
   .slider--tablet.grid--peek {
