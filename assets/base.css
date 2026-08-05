@@ -591,6 +591,12 @@ hr {
   font-weight: 700;
   line-height: 1.231;
 }
+
+@media (max-width: 768px){
+  .full-unstyled-link{
+    font-weight: 500;
+  }
+}
 .product-description {
   margin: 6px 0;
   font-size: 18px;
