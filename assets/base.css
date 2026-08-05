@@ -599,7 +599,7 @@ hr {
 }
 .product-description {
   margin: 6px 0;
-  font-size: 18px;
+  font-size: clamp(10px, 3vw, 18px);
   line-height: 1.5;
   color: #444444;
   overflow: hidden;
