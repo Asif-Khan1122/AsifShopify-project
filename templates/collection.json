@@ -35,7 +35,7 @@
         "heading_size": "h2",
         "products_per_page": 16,
         "columns_desktop": 3,
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
