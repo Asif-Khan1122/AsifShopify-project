@@ -3207,17 +3207,7 @@ details-disclosure > details {
     }
   }
 }
-@media screen and (min-width: 750px) and (max-width: 989px) {
-  .product-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
 
-/* 👇 Desktop: force 3 columns from 990px up */
-@media screen and (min-width: 990px) {
-  .product-grid {
-    grid-template-columns: repeat(3, 1fr) !important;
-  }
 .font-body-bold {
   font-weight: var(--font-body-weight-bold);
 }
