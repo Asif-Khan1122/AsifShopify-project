@@ -3207,7 +3207,25 @@ details-disclosure > details {
     }
   }
 }
+{% style %}
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Desktop: 3 columns */
+    gap: 20px;
+  }
 
+  @media screen and (max-width: 989px) and (min-width: 750px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr); /* Tablet: 2 columns */
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .product-grid {
+      grid-template-columns: repeat(1, 1fr); /* Mobile: 1 column */
+    }
+  }
+{% endstyle %}
 .font-body-bold {
   font-weight: var(--font-body-weight-bold);
 }
