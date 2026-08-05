@@ -35,7 +35,7 @@
         "heading_size": "h2",
         "products_per_page": 16,
         "columns_desktop": 3,
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -87,7 +87,7 @@
       "settings": {
         "heading": "What Makes <strong> Us Different</strong>",
         "bg_color": "#fafafa",
-        "bold_color": "#7C8C74",
+        "bold_color": "#7c8c74",
         "card_bg_color": "#fff",
         "margin_top": 68,
         "margin_bottom": 68,
