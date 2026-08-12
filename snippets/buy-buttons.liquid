@@ -1,15 +1,3 @@
-{% comment %}
-  Renders product buy-buttons.
-  Accepts:
-  - product: {Object} product object.
-  - block: {Object} passing the block information.
-  - product_form_id: {String} product form id.
-  - section_id: {String} id of section to which this snippet belongs.
-  - show_pickup_availability: {Boolean} for the pickup availability. If true the pickup availability is rendered, false - not rendered (optional).
-
-  Usage:
-  {% render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true %}
-{% endcomment %}
 <div {{ block.shopify_attributes }}>
   {%- if product != blank -%}
     {%- liquid
@@ -70,31 +58,52 @@
               assign quantity_rule_soldout = true
             endif
           -%}
-          <button
-            id="ProductSubmitButton-{{ section_id }}"
-            type="submit"
-            name="add"
-            class="product-form__submit button button--full-width {% if show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
-            {% if product.selected_or_first_available_variant.available == false
-              or quantity_rule_soldout
-              or product.selected_or_first_available_variant == null
-            %}
-              disabled
-            {% endif %}
-          >
-            <span>
-              {%- if product.selected_or_first_available_variant == null -%}
-                {{ 'products.product.unavailable' | t }}
-              {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
-                {{ 'products.product.sold_out' | t }}
-              {%- else -%}
-                {{ 'products.product.add_to_cart' | t }}
-              {%- endif -%}
-            </span>
-            {%- render 'loading-spinner' -%}
-          </button>
+
+          <div class="custom-buy-buttons">
+            <button
+              id="ProductSubmitButton-{{ section_id }}"
+              type="submit"
+              name="add"
+              class="product-form__submit button custom-add-to-cart"
+              {% if product.selected_or_first_available_variant.available == false
+                or quantity_rule_soldout
+                or product.selected_or_first_available_variant == null
+              %}
+                disabled
+              {% endif %}
+            >
+              <span class="custom-add-to-cart__content">
+                <span>
+                  {%- if product.selected_or_first_available_variant == null -%}
+                    {{ 'products.product.unavailable' | t }}
+                  {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+                    {{ 'products.product.sold_out' | t }}
+                  {%- else -%}
+                    {{ 'products.product.add_to_cart' | t }}
+                  {%- endif -%}
+                </span>
+
+                <span class="custom-cart-icon">
+                  {{- 'icon-cart.svg' | inline_asset_content -}}
+                </span>
+              </span>
+
+              {%- render 'loading-spinner' -%}
+            </button>
+
+            <button
+              type="button"
+              class="custom-wishlist-button"
+              aria-label="Add to wishlist"
+            >
+              {{- 'icon-heart.svg' | inline_asset_content -}}
+            </button>
+          </div>
+
           {%- if show_dynamic_checkout -%}
-            {{ form | payment_button }}
+            <div class="custom-dynamic-checkout">
+              {{ form | payment_button }}
+            </div>
           {%- endif -%}
         </div>
       {%- endform -%}
