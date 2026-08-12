@@ -12,6 +12,10 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "rating_HGCk7V": {
+          "type": "rating",
+          "settings": {}
+        },
         "title": {
           "type": "title",
           "settings": {}
@@ -36,6 +40,7 @@
         }
       },
       "block_order": [
+        "rating_HGCk7V",
         "title",
         "description",
         "variant_picker",
