@@ -187,7 +187,9 @@
         "heading": "Featured <strong>Plants</strong>",
         "view_all_btn": "View All Plants",
         "view_all_url": "#",
-        "bg_color": "#eeeeee"
+        "bg_color": "#eeeeee",
+        "margin_top": 68,
+        "margin_bottom": 68
       }
     },
     "bulk_services_f8BMHr": {
@@ -212,6 +214,8 @@
         "secondary_btn_text_color": "#222",
         "secondary_btn_hover_color": "#7c8c74",
         "secondary_btn_hover_text_color": "#ffffff",
+        "margin_top": 68,
+        "margin_bottom": 68,
         "bg_color": "#fefefe"
       }
     },
@@ -230,16 +234,16 @@
           "type": "card",
           "settings": {
             "icon": "shopify://shop_images/Group_2_1.png",
-            "title": "Rooted In Local Knowledge",
-            "text": "We specialize in Florida-native and climate-resilient plants, ensuring your garden or landscape thrives with minimal maintenance."
+            "title": "Grown with Purpose",
+            "text": "Each plant is carefully cultivated using eco-friendly practices. We promote biodiversity, sustainability, and long-term soil health."
           }
         },
         "card_4RHppg": {
           "type": "card",
           "settings": {
             "icon": "shopify://shop_images/Group_2.png",
-            "title": "Rooted In Local Knowledge",
-            "text": "We specialize in Florida-native and climate-resilient plants, ensuring your garden or landscape thrives with minimal maintenance."
+            "title": "Pollinator & Wildlife Friendly",
+            "text": "We carry a curated selection of butterfly-hosting, bird-attracting, and environmentally beneficial plants to support your local ecosystem."
           }
         }
       },
@@ -252,8 +256,13 @@
       "settings": {
         "heading": "Why <strong>Choose Us</strong>",
         "bg_color": "#fafafa",
+        "highlight_color": "#9c747c",
+        "margin_top": 68,
+        "margin_bottom": 68,
         "padding_block": 80,
-        "padding_inline": 68
+        "padding_inline": 68,
+        "card_padding_top": 25,
+        "card_padding_bottom": 25
       }
     },
     "gallery_ecRt4e": {
@@ -310,7 +319,9 @@
         "heading": "Our",
         "heading_accent": "Gallery",
         "button_label": "View All Gallery",
-        "button_link": "#"
+        "button_link": "#",
+        "margin_top": 68,
+        "margin_bottom": 68
       }
     }
   },

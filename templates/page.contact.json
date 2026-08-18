@@ -12,6 +12,9 @@
     "main": {
       "type": "main-page",
       "settings": {
+        "background_image": "shopify://shop_images/2.png",
+        "heading": "Contact Us",
+        "color_heading": "#ffffff",
         "padding_top": 100,
         "padding_bottom": 36
       }
@@ -20,15 +23,67 @@
       "type": "contact-form",
       "settings": {
         "heading": "We’re Here to Help You Grow!",
+        "heading_highlight": "Help You Grow!",
+        "highlight_color": "#a9788c",
         "heading_size": "h1",
         "color_scheme": "scheme-1",
+        "bg_color": "#fbf8e8",
+        "button_label": "Learn More About Us",
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "padding_horizontal": 70
+      }
+    },
+    "why_choose_us_N6nCKx": {
+      "type": "why-choose-us",
+      "blocks": {
+        "card_w8wcW7": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/Group_2.png",
+            "title": "Rooted In Local Knowledge",
+            "text": "We specialize in Florida-native and climate-resilient plants, ensuring your garden or landscape thrives with minimal maintenance."
+          }
+        },
+        "card_g9BJpM": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/Group_2_1.png",
+            "title": "Grown with Purpose",
+            "text": "Each plant is carefully cultivated using eco-friendly practices. We promote biodiversity, sustainability, and long-term soil health."
+          }
+        },
+        "card_BtXD99": {
+          "type": "card",
+          "settings": {
+            "icon": "shopify://shop_images/Group_2_2.png",
+            "title": "Pollinator & Wildlife Friendly",
+            "text": "We carry a curated selection of butterfly-hosting, bird-attracting, and environmentally beneficial plants to support your local ecosystem."
+          }
+        }
+      },
+      "block_order": [
+        "card_w8wcW7",
+        "card_g9BJpM",
+        "card_BtXD99"
+      ],
+      "name": "Why Choose Us",
+      "settings": {
+        "heading": "Why <strong>Choose Us</strong>",
+        "bg_color": "#00000000",
+        "highlight_color": "#9C747C",
+        "margin_top": 68,
+        "margin_bottom": 68,
+        "padding_block": 80,
+        "padding_inline": 68,
+        "card_padding_top": 25,
+        "card_padding_bottom": 25
       }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "why_choose_us_N6nCKx"
   ]
 }
